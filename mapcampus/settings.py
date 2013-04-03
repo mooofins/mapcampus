@@ -14,9 +14,9 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis', 
-        'NAME': 'gisdb', #'mapcampu_test'
-        'USER': 'ylou', #'mapcampu_prod'
-        'PASSWORD': '', #'prod1867'
+        'NAME': 'gisdb',
+        'USER': 'ylou',
+        'PASSWORD': '',
         'HOST': '',
         'PORT': '',
     }
@@ -167,5 +167,5 @@ LOGGING = {
 INTERNAL_IPS = ('127.0.0.1',)
 POSTGIS_TEMPLATE = 'template_postgis'
 
-MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('debug_toolbar.middleware.DebugToolbarMiddleware',)
-INSTALLED_APPS = INSTALLED_APPS + ('debug_toolbar',)
+# MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + ('debug_toolbar.middleware.DebugToolbarMiddleware',)
+# INSTALLED_APPS = INSTALLED_APPS + ('debug_toolbar',)

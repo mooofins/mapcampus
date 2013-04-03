@@ -1,0 +1,1200 @@
+<doc>
+<line><to>Beckman Quad East:Bi.WI.11</to><from>Beckman Quad West:Bi.WI10</from></line>
+<line><to>Beckman Quad West:Bi.WI12</to><from>Beckman Quad East:Bi.WI.11</from></line>
+<line><to>Beckman Quad West:Bi.WI14</to><from>Beckman Quad West:Bi.WI12</from></line>
+<line><to>Beckman Quad East:Bi.WI.13</to><from>Beckman Quad West:Bi.WI12</from></line>
+<line><to>Beckman Quad West:Bi.IWI17</to><from>Beckman Quad West:Bi.WI14</from></line>
+<line><to>Beckman Quad West:Bi.IWI17</to><from>Beckman Quad East:Bi.WI.15</from></line>
+<line><to>Beckman Quad East:Bi.WI.16</to><from>Beckman Quad East:Bi.WI.15</from></line>
+<line><to>Beckman Quad East:Bi.DH.3</to><from>Beckman Quad East:Bi.WI.16</from></line>
+<line><to>Beckman Quad East:Csl.WI.8</to><from>Beckman Quad East:Bi.WI.16</from></line>
+<line><to>Beckman Quad East:Csl.WI.8</to><from>Beckman Quad East:Bi.WI</from></line>
+<line><to>Beckman Quad East:Csl.D.2</to><from>Beckman Quad East:Csl.WI.8</from></line>
+<line><to>Beckman Quad East:Csl.WI.7</to><from>Beckman Quad East:Csl.D.2</from></line>
+<line><to>Beckman Quad East:Csl.WI.5</to><from>Beckman Quad East:Csl.WI.7</from></line>
+<line><to>Beckman Quad East:Csl.WI.5</to><from>Beckman Quad East:Csl.WI.6</from></line>
+<line><to>Beckman Quad East:Csl.DH.1</to><from>Beckman Quad East:Csl.WI.5</from></line>
+<line><to>Beckman Quad East:Csl.wi.4</to><from>Beckman Quad East:Csl.WI.5</from></line>
+<line><to>Beckman Quad East:Bq.WI.3</to><from>Beckman Quad East:Csl.wi.4</from></line>
+<line><to>Beckman Quad East:Bq.WI.2</to><from>Beckman Quad East:Bq.WI.3</from></line>
+<line><to>Beckman Quad East:Bq.WI.1</to><from>Beckman Quad East:Bq.WI.2</from></line>
+<line><to>Beckman Quad East:Ncel.WI.11</to><from>Beckman Quad East:Bq.WI.1</from></line>
+<line><to>Beckman Quad West:Mnl.WI14</to><from>Beckman Quad East:Bq.WI.1</from></line>
+<line><to>Beckman Quad West:Mnl.WI15</to><from>Beckman Quad East:Bq.WI.2</from></line>
+<line><to>Beckman Quad East:Bq.WI.4</to><from>Beckman Quad West:Mnl.WI15</from></line>
+<line><to>Beckman Quad East:Bq.WI.4</to><from>Beckman Quad West:Mnl.WI16</from></line>
+<line><to>Beckman Quad East:Csl.WI.7</to><from>Beckman Quad East:Bi.WI</from></line>
+<line><to>Beckman Quad West:Bi.WI3</to><from>Beckman Quad East:Bi.WI</from></line>
+<line><to>Beckman Quad West:Bi.WI2</to><from>Beckman Quad East:Bi.WI</from></line>
+<line><to>Beckman Quad West:Bi.WI5</to><from>Beckman Quad West:Bi.WI2</from></line>
+<line><to>Beckman Quad West:Bi.WI5</to><from>Beckman Quad West:Bi.WI4</from></line>
+<line><to>Beckman Quad West:Bi.WI3</to><from>Beckman Quad West:Bi.WI4</from></line>
+<line><to>Beckman Quad West:Bi.WI3</to><from>Beckman Quad West:Bi.D</from></line>
+<line><to>Beckman Quad West:Bi.WI4</to><from>Beckman Quad West:Bi.WI7</from></line>
+<line><to>Beckman Quad West:Bi.WI6</to><from>Beckman Quad West:Bi.WI7</from></line>
+<line><to>Beckman Quad West:Bi.WI9</to><from>Beckman Quad West:Bi.WI6</from></line>
+<line><to>Beckman Quad West:Bi.WI9</to><from>Beckman Quad West:Bi.WI8</from></line>
+<line><to>Beckman Quad West:Bi.WI8</to><from>Beckman Quad West:Bi.WI10</from></line>
+<line><to>Beckman Quad West:Mnl.WI6</to><from>Beckman Quad West:Bi.WI5</from></line>
+<line><to>Beckman Quad West:Mnl.WI17</to><from>Beckman Quad West:Bi.WI1</from></line>
+<line><to>Beckman Quad West:Bi.WI1</to><from>Beckman Quad West:Bi.WI2</from></line>
+<line><to>Beckman Quad West:Mnl.WI14</to><from>Beckman Quad West:Mnl.WI6</from></line>
+<line><to>Beckman Quad West:Mnl.WI7</to><from>Beckman Quad West:Mnl.WI6</from></line>
+<line><to>Beckman Quad West:Mnl.WI6</to><from>Beckman Quad West:Mnl.WI4</from></line>
+<line><to>Beckman Quad West:Mnl.WI16</to><from>Beckman Quad West:Mnl.WI17</from></line>
+<line><to>Beckman Quad West:Mnl.WI8</to><from>Beckman Quad West:Mnl.WI7</from></line>
+<line><to>Beckman Quad West:Mnl.DH2</to><from>Beckman Quad West:Mnl.WI8</from></line>
+<line><to>Beckman Quad West:Mnl.WI9</to><from>Beckman Quad West:Mnl.WI8</from></line>
+<line><to>Beckman Quad West:Mnl.WI9</to><from>Beckman Quad West:Mnl.WI14</from></line>
+<line><to>Beckman Quad East:Ncel.WI.8</to><from>Beckman Quad East:Bq.WI.1</from></line>
+<line><to>Beckman Quad East:Ncel.WI.9</to><from>Beckman Quad East:Ncel.WI.8</from></line>
+<line><to>Beckman Quad East:Ncel.WI.9</to><from>Beckman Quad East:Ncel.WI.10</from></line>
+<line><to>Beckman Quad East:Ncel.WI.10</to><from>Beckman Quad East:Ncel.WI.11</from></line>
+<line><to>Beckman Quad East:Csl.WI.1</to><from>Beckman Quad East:Ncel.WI.11</from></line>
+<line><to>Beckman Quad East:Csl.D.1</to><from>Beckman Quad East:Csl.WI.1</from></line>
+<line><to>Beckman Quad East:Csl.WI.2</to><from>Beckman Quad East:Csl.WI.1</from></line>
+<line><to>Beckman Quad East:Csl.WI.2</to><from>Beckman Quad East:Csl.WI.3</from></line>
+<line><to>Beckman Quad East:Hl.WI.2</to><from>Beckman Quad East:Csl.WI.3</from></line>
+<line><to>Beckman Quad East:Hl.WI.2</to><from>Beckman Quad East:Hl.WI.3</from></line>
+<line><to>Beckman Quad East:Hl.WI.3</to><from>Beckman Quad East:Hl.DH.1</from></line>
+<line><to>Beckman Quad East:Hl.WI.1</to><from>Beckman Quad East:Hl.WI.2</from></line>
+<line><to>Beckman Quad East:Hl.WI.1</to><from>Beckman Quad East:Ncel.WI.12</from></line>
+<line><to>Beckman Quad East:Hl.WI.1</to><from>Beckman Quad East:Csl.WI.10</from></line>
+<line><to>Beckman Quad East:Csl.WI.10</to><from>Beckman Quad East:Csl.WI.9</from></line>
+<line><to>Beckman Quad East:Csl.WI.9</to><from>Beckman Quad East:Csl.WI9</from></line>
+<line><to>Beckman Quad East:Csl.WI9</to><from>Beckman Quad East:Bi.WI18</from></line>
+<line><to>Beckman Quad East:Bi.WI18</to><from>Beckman Quad East:Csl.WI.8</from></line>
+<line><to>Beckman Quad East:Bi.WI18</to><from>Beckman Quad West:Bi.IWI17</from></line>
+<line><to>Beckman Quad East:Ncel.WI.13</to><from>Beckman Quad East:Ncel.WI.12</from></line>
+<line><to>Beckman Quad East:Ncel.WI.1</to><from>Beckman Quad East:Ncel.WI.13</from></line>
+<line><to>Beckman Quad East:Dcl.WI.8</to><from>Beckman Quad East:Ncel.WI.1</from></line>
+<line><to>Beckman Quad East:Dcl.WI.7</to><from>Beckman Quad East:Dcl.WI.8</from></line>
+<line><to>Beckman Quad East:Ncel.WI.2</to><from>Beckman Quad East:Ncel.WI.1</from></line>
+<line><to>Beckman Quad East:Dcl.WI.9</to><from>Beckman Quad East:Dcl.WI.8</from></line>
+<line><to>Beckman Quad East:Dcl.dh.2</to><from>Beckman Quad East:Dcl.WI.9</from></line>
+<line><to>Beckman Quad East:Dcl.wi.11</to><from>Beckman Quad East:Dcl.WI.9</from></line>
+<line><to>Beckman Quad East:Dcl.WI.1</to><from>Beckman Quad East:Dcl.wi.11</from></line>
+<line><to>Beckman Quad East:Dcl.WI.1</to><from>Beckman Quad West:Kga.WI1</from></line>
+<line><to>Beckman Quad East:Dcl.dh.1</to><from>Beckman Quad West:Kga.WI1</from></line>
+<line><to>Beckman Quad West:Kga.WI16</to><from>Beckman Quad East:Dcl.WI.1</from></line>
+<line><to>Beckman Quad West:Kga.WI15</to><from>Beckman Quad West:Kga.WI16</from></line>
+<line><to>Beckman Quad West:Kga.WI14</to><from>Beckman Quad West:Kga.WI15</from></line>
+<line><to>Beckman Quad West:Kga.WI14</to><from>Beckman Quad West:Kga.D2</from></line>
+<line><to>Beckman Quad West:Kga.WI13</to><from>Beckman Quad West:Kga.WI14</from></line>
+<line><to>Beckman Quad West:Kga.WI13</to><from>Beckman Quad West:Kga.D1</from></line>
+<line><to>Beckman Quad West:Kga.WI13</to><from>Beckman Quad West:Kga.WI12</from></line>
+<line><to>Beckman Quad West:Kga.WI12</to><from>Beckman Quad West:Kga.WI10</from></line>
+<line><to>Beckman Quad West:Mnl.WI10</to><from>Beckman Quad West:Mnl.WI9</from></line>
+<line><to>Beckman Quad East:Ncel.WI.7</to><from>Beckman Quad East:Ncel.WI.8</from></line>
+<line><to>Beckman Quad East:Ncel.WI.5</to><from>Beckman Quad East:Ncel.WI.7</from></line>
+<line><to>Beckman Quad East:Ncel.WI.4</to><from>Beckman Quad West:Mnl.WI12</from></line>
+<line><to>Beckman Quad West:Mnl.WI13</to><from>Beckman Quad East:Ncel.WI.4</from></line>
+<line><to>Beckman Quad East:Dcl.wi.3</to><from>Beckman Quad West:Mnl.WI13</from></line>
+<line><to>Beckman Quad East:Dcl.Wi.4</to><from>Beckman Quad East:Dcl.wi.3</from></line>
+<line><to>Beckman Quad West:Kga.WI3</to><from>Beckman Quad East:Dcl.wi.3</from></line>
+<line><to>Beckman Quad West:Kga.WI4</to><from>Beckman Quad West:Kga.WI3</from></line>
+<line><to>Beckman Quad East:Ncel.WI.4</to><from>Beckman Quad East:Ncel.WI.5</from></line>
+<line><to>Beckman Quad East:Ncel.WI.3</to><from>Beckman Quad West:Mnl.WI13</from></line>
+<line><to>Beckman Quad West:Mnl.WI13</to><from>Beckman Quad West:Mnl.DH1</from></line>
+<line><to>Beckman Quad West:Mnl.WI12</to><from>Beckman Quad West:Mnl.WI10</from></line>
+<line><to>Beckman Quad East:Dcl.WI.6</to><from>Beckman Quad East:Dcl.WI.7</from></line>
+<line><to>Beckman Quad East:Dcl.d.3</to><from>Beckman Quad East:Dcl.WI.6</from></line>
+<line><to>Beckman Quad East:Dcl.wi.5</to><from>Beckman Quad East:Dcl.WI.6</from></line>
+<line><to>Beckman Quad East:Dcl.Wi.4</to><from>Beckman Quad East:Dcl.wi.5</from></line>
+<line><to>Beckman Quad East:Ncel.WI.2</to><from>Beckman Quad East:Ncel.WI.3</from></line>
+<line><to>Beckman Quad West:Kga.WI11</to><from>Beckman Quad West:Kga.WI4</from></line>
+<line><to>Beckman Quad West:Kga.WI6</to><from>Beckman Quad West:Kga.WI11</from></line>
+<line><to>Beckman Quad West:Kga.WI6</to><from>Beckman Quad West:Mnl.WI1</from></line>
+<line><to>Beckman Quad West:Kga.WI8</to><from>Beckman Quad West:Kga.WI6</from></line>
+<line><to>Beckman Quad West:Kga.WI9</to><from>Beckman Quad West:Kga.WI8</from></line>
+<line><to>Beckman Quad West:Kga.WI10</to><from>Beckman Quad West:Kga.WI9</from></line>
+<line><to>Beckman Quad West:Kga.WI9</to><from>Beckman Quad West:Mnl.WI2</from></line>
+<line><to>Beckman Quad West:Mnl.WI2</to><from>Beckman Quad West:Mnl.WI4</from></line>
+<line><to>Beckman Quad West:Mnl.WI14</to><from>Beckman Quad West:Mnl.WI15</from></line>
+<line><to>Beckman Quad West:Kga.WI1</to><from>Beckman Quad West:Kga.wi2</from></line>
+<line><to>Beckman Quad West:Kga.wi2</to><from>Beckman Quad East:Dcl.WI2</from></line>
+<line><to>Beckman Quad West:Kga.wi2</to><from>Beckman Quad East:Dcl.wi.3</from></line>
+<line><to>Beckman Quad East:Dcl.WI2</to><from>Beckman Quad East:Dcl.wi.3</from></line>
+<line><to>Beckman Quad East:Csl.WI.7</to><from>Beckman Quad West:Bi.WI2</from></line>
+<line><to>Beckman Quad West:Bi.WI2</to><from>Beckman Quad West:Bi.WI3</from></line>
+<line><to>Beckman Quad West:Bi.WI5</to><from>Beckman Quad West:Bi.WI6</from></line>
+<line><to>Beckman Quad West:Mnl.WI4</to><from>Beckman Quad West:Bi.WI9</from></line>
+<line><to>Beckman Quad West:Kga.WI7</to><from>Beckman Quad West:Kga.DH1</from></line>
+<line><to>Beckman Quad West:Kga.WI5</to><from>Beckman Quad West:Kga.WI7</from></line>
+<line><to>Beckman Quad West:Kga.WI5</to><from>Beckman Quad West:Kga.WI11</from></line>
+<line><to>Beckman Quad West:Kga.WI4</to><from>Beckman Quad West:Mnl.DH1</from></line>
+<line><to>Beckman Quad West:Mnl.DH1</to><from>Beckman Quad West:Mnl.WI1</from></line>
+<line><to>ACES:6</to><from>ACES:5</from></line>
+<line><to>ACES:13</to><from>ACES:6</from></line>
+<line><to>ACES:16</to><from>ACES:13</from></line>
+<line><to>ACES:17</to><from>ACES:16</from></line>
+<line><to>ACES:62</to><from>ACES:17</from></line>
+<line><to>ACES:52</to><from>ACES:62</from></line>
+<line><to>ACES:53</to><from>ACES:52</from></line>
+<line><to>ACES:54</to><from>ACES:53</from></line>
+<line><to>ACES:55</to><from>ACES:54</from></line>
+<line><to>ACES:56</to><from>ACES:55</from></line>
+<line><to>ACES:65</to><from>ACES:56</from></line>
+<line><to>ACES:66</to><from>ACES:65</from></line>
+<line><to>ACES:68</to><from>ACES:66</from></line>
+<line><to>ACES:70d</to><from>ACES:68</from></line>
+<line><to>ACES:69</to><from>ACES:70d</from></line>
+<line><to>ACES:68</to><from>ACES:69</from></line>
+<line><to>ACES:67</to><from>ACES:69</from></line>
+<line><to>ACES:66</to><from>ACES:67</from></line>
+<line><to>ACES:71</to><from>ACES:66</from></line>
+<line><to>ACES:85</to><from>ACES:71</from></line>
+<line><to>ACES:86</to><from>ACES:85</from></line>
+<line><to>ACES:87</to><from>ACES:86</from></line>
+<line><to>ACES:88</to><from>ACES:87</from></line>
+<line><to>ACES:89</to><from>ACES:88</from></line>
+<line><to>ACES:90</to><from>ACES:89</from></line>
+<line><to>ACES:92</to><from>ACES:90</from></line>
+<line><to>ACES:93</to><from>ACES:92</from></line>
+<line><to>ACES:110</to><from>ACES:93</from></line>
+<line><to>ACES:111</to><from>ACES:110</from></line>
+<line><to>ACES:142</to><from>ACES:111</from></line>
+<line><to>ACES:141</to><from>ACES:142</from></line>
+<line><to>ACES:140</to><from>ACES:141</from></line>
+<line><to>ACES:135</to><from>ACES:140</from></line>
+<line><to>ACES:134</to><from>ACES:135</from></line>
+<line><to>ACES:133</to><from>ACES:134</from></line>
+<line><to>ACES:121</to><from>ACES:133</from></line>
+<line><to>ACES:128</to><from>ACES:121</from></line>
+<line><to>ACES:129</to><from>ACES:128</from></line>
+<line><to>ACES:126</to><from>ACES:129</from></line>
+<line><to>ACES:1</to><from>ACES:126</from></line>
+<line><to>ACES:2</to><from>ACES:1</from></line>
+<line><to>ACES:3</to><from>ACES:2</from></line>
+<line><to>ACES:5</to><from>ACES:3</from></line>
+<line><to>ACES:3</to><from>ACES:4</from></line>
+<line><to>ACES:38dh</to><from>ACES:4</from></line>
+<line><to>ACES:39d</to><from>ACES:38dh</from></line>
+<line><to>ACES:8</to><from>ACES:38dh</from></line>
+<line><to>ACES:9</to><from>ACES:8</from></line>
+<line><to>ACES:10</to><from>ACES:9</from></line>
+<line><to>ACES:13</to><from>ACES:10</from></line>
+<line><to>ACES:7</to><from>ACES:10</from></line>
+<line><to>ACES:40d</to><from>ACES:7</from></line>
+<line><to>ACES:6</to><from>ACES:7</from></line>
+<line><to>ACES:41d</to><from>ACES:14</from></line>
+<line><to>ACES:12</to><from>ACES:42dh</from></line>
+<line><to>ACES:11</to><from>ACES:12</from></line>
+<line><to>ACES:9</to><from>ACES:11</from></line>
+<line><to>ACES:15</to><from>ACES:14</from></line>
+<line><to>ACES:19</to><from>ACES:15</from></line>
+<line><to>ACES:18</to><from>ACES:19</from></line>
+<line><to>ACES:17</to><from>ACES:18</from></line>
+<line><to>ACES:43d</to><from>ACES:15</from></line>
+<line><to>ACES:16</to><from>ACES:44d</from></line>
+<line><to>ACES:18</to><from>ACES:45</from></line>
+<line><to>ACES:62</to><from>ACES:49</from></line>
+<line><to>ACES:46</to><from>ACES:45</from></line>
+<line><to>ACES:47</to><from>ACES:46</from></line>
+<line><to>ACES:8</to><from>ACES:14</from></line>
+<line><to>ACES:125</to><from>ACES:37d</from></line>
+<line><to>ACES:126</to><from>ACES:125</from></line>
+<line><to>ACES:127</to><from>ACES:125</from></line>
+<line><to>ACES:128</to><from>ACES:127</from></line>
+<line><to>ACES:133</to><from>ACES:127</from></line>
+<line><to>ACES:124</to><from>ACES:127</from></line>
+<line><to>ACES:122</to><from>ACES:124</from></line>
+<line><to>ACES:121</to><from>ACES:122</from></line>
+<line><to>ACES:28</to><from>ACES:122</from></line>
+<line><to>ACES:27</to><from>ACES:28</from></line>
+<line><to>ACES:23</to><from>ACES:27</from></line>
+<line><to>ACES:24</to><from>ACES:23</from></line>
+<line><to>ACES:25</to><from>ACES:24</from></line>
+<line><to>ACES:30d</to><from>ACES:25</from></line>
+<line><to>ACES:31d</to><from>ACES:32</from></line>
+<line><to>ACES:22</to><from>ACES:32</from></line>
+<line><to>ACES:116</to><from>ACES:117d</from></line>
+<line><to>ACES:118d</to><from>ACES:116</from></line>
+<line><to>ACES:109</to><from>ACES:117d</from></line>
+<line><to>ACES:108</to><from>ACES:109</from></line>
+<line><to>ACES:115dh</to><from>ACES:108</from></line>
+<line><to>ACES:107</to><from>ACES:108</from></line>
+<line><to>ACES:119</to><from>ACES:107</from></line>
+<line><to>ACES:108</to><from>ACES:119</from></line>
+<line><to>ACES:120</to><from>ACES:130dh</from></line>
+<line><to>ACES:119</to><from>ACES:120</from></line>
+<line><to>ACES:132</to><from>ACES:120</from></line>
+<line><to>ACES:132</to><from>ACES:138</from></line>
+<line><to>ACES:136</to><from>ACES:134</from></line>
+<line><to>ACES:138</to><from>ACES:136</from></line>
+<line><to>ACES:139</to><from>ACES:138</from></line>
+<line><to>ACES:105</to><from>ACES:139</from></line>
+<line><to>ACES:104</to><from>ACES:105</from></line>
+<line><to>ACES:102</to><from>ACES:104</from></line>
+<line><to>ACES:101</to><from>ACES:102</from></line>
+<line><to>ACES:94</to><from>ACES:101</from></line>
+<line><to>ACES:103</to><from>ACES:102</from></line>
+<line><to>ACES:101</to><from>ACES:103</from></line>
+<line><to>ACES:103</to><from>ACES:104</from></line>
+<line><to>ACES:113h</to><from>ACES:103</from></line>
+<line><to>ACES:111</to><from>ACES:112dh</from></line>
+<line><to>ACES:110</to><from>ACES:112dh</from></line>
+<line><to>ACES:142</to><from>ACES:143d</from></line>
+<line><to>ACES:96</to><from>ACES:95</from></line>
+<line><to>ACES:95</to><from>ACES:94</from></line>
+<line><to>ACES:87</to><from>ACES:95</from></line>
+<line><to>ACES:88</to><from>ACES:87</from></line>
+<line><to>ACES:48</to><from>ACES:63stair</from></line>
+<line><to>ACES:100d</to><from>ACES:91</from></line>
+<line><to>ACES:90</to><from>ACES:91</from></line>
+<line><to>ACES:99dh</to><from>ACES:91</from></line>
+<line><to>ACES:92</to><from>ACES:99dh</from></line>
+<line><to>ACES:98dh</to><from>ACES:93</from></line>
+<line><to>ACES:97d</to><from>ACES:96</from></line>
+<line><to>ACES:94</to><from>ACES:93</from></line>
+<line><to>ACES:98dh</to><from>ACES:99dh</from></line>
+<line><to>ACES:124</to><from>ACES:125</from></line>
+<line><to>ACES:48</to><from>ACES:47</from></line>
+<line><to>ACES:22</to><from>ACES:28</from></line>
+<line><to>ACES:21</to><from>ACES:22</from></line>
+<line><to>ACES:33d</to><from>ACES:21</from></line>
+<line><to>ACES:34dh</to><from>ACES:21</from></line>
+<line><to>ACES:20</to><from>ACES:21</from></line>
+<line><to>ACES:35dh</to><from>ACES:20</from></line>
+<line><to>ACES:14</to><from>ACES:20</from></line>
+<line><to>ACES:25</to><from>ACES:23</from></line>
+<line><to>ACES:45</to><from>ACES:49</from></line>
+<line><to>ACES:48</to><from>ACES:26</from></line>
+<line><to>ACES:26</to><from>ACES:24</from></line>
+<line><to>ACES:29d</to><from>ACES:26</from></line>
+<line><to>ACES:24</to><from>ACES:29d</from></line>
+<line><to>ACES:26</to><from>ACES:109</from></line>
+<line><to>ACES:123</to><from>ACES:109</from></line>
+<line><to>ACES:123</to><from>ACES:26</from></line>
+<line><to>ACES:131dh</to><from>ACES:123</from></line>
+<line><to>ACES:121</to><from>ACES:120</from></line>
+<line><to>ACES:136</to><from>ACES:132</from></line>
+<line><to>ACES:135</to><from>ACES:136</from></line>
+<line><to>ACES:137</to><from>ACES:135</from></line>
+<line><to>ACES:139</to><from>ACES:137</from></line>
+<line><to>ACES:106</to><from>ACES:139</from></line>
+<line><to>ACES:107</to><from>ACES:106</from></line>
+<line><to>ACES:105</to><from>ACES:106</from></line>
+<line><to>ACES:114dh</to><from>ACES:107</from></line>
+<line><to>ACES:80dh</to><from>ACES:53</from></line>
+<line><to>ACES:51</to><from>ACES:52</from></line>
+<line><to>ACES:50</to><from>ACES:51</from></line>
+<line><to>ACES:49</to><from>ACES:50</from></line>
+<line><to>ACES:60</to><from>ACES:50</from></line>
+<line><to>ACES:61</to><from>ACES:60</from></line>
+<line><to>ACES:78d</to><from>ACES:61</from></line>
+<line><to>ACES:63stair</to><from>ACES:64d, stair</from></line>
+<line><to>ACES:63stair</to><from>ACES:65</from></line>
+<line><to>ACES:71</to><from>ACES:72</from></line>
+<line><to>ACES:73</to><from>ACES:72</from></line>
+<line><to>ACES:76</to><from>ACES:73</from></line>
+<line><to>ACES:83d</to><from>ACES:76</from></line>
+<line><to>ACES:72</to><from>ACES:82dh</from></line>
+<line><to>ACES:84d</to><from>ACES:73</from></line>
+<line><to>ACES:75</to><from>ACES:84d</from></line>
+<line><to>ACES:74</to><from>ACES:75</from></line>
+<line><to>ACES:95</to><from>ACES:74</from></line>
+<line><to>ACES:94</to><from>ACES:75</from></line>
+<line><to>ACES:79d</to><from>ACES:58</from></line>
+<line><to>ACES:54</to><from>ACES:81dh</from></line>
+<line><to>ACES:57</to><from>ACES:56</from></line>
+<line><to>ACES:59</to><from>ACES:57</from></line>
+<line><to>ACES:60</to><from>ACES:59</from></line>
+<line><to>ACES:63stair</to><from>ACES:59</from></line>
+<line><to>ACES:124</to><from>ACES:28</from></line>
+<line><to>ACES:123</to><from>ACES:122</from></line>
+<line><to>ACES:136</to><from>ACES:137</from></line>
+<line><to>ACES:133</to><from>ACES:136</from></line>
+<line><to>ACES:132</to><from>ACES:139</from></line>
+<line><to>ACES:73</to><from>ACES:74</from></line>
+<line><to>ACES:2</to><from>ACES:36d</from></line>
+<line><to>ACES:15</to><from>ACES:48</from></line>
+<line><to>ACES:15</to><from>ACES:47</from></line>
+<line><to>ACES:30d</to><from>ACES:48</from></line>
+<line><to>ACES:137</to><from>ACES:144dh</from></line>
+<line><to>ACES:77d</to><from>ACES:59</from></line>
+<line><to>ACES:123</to><from>ACES:24</from></line>
+<line><to>ACES:123</to><from>ACES:23</from></line>
+<line><to>ACES:14</to><from>ACES:48</from></line>
+<line><to>ACES:23</to><from>ACES:32</from></line>
+<line><to>ACES:57</to><from>ACES:58</from></line>
+<line><to>ACES:123</to><from>ACES:27</from></line>
+<line><to>PAR/FAR:2</to><from>PAR/FAR:1</from></line>
+<line><to>PAR/FAR:3</to><from>PAR/FAR:2</from></line>
+<line><to>PAR/FAR:61</to><from>PAR/FAR:3</from></line>
+<line><to>PAR/FAR:62d</to><from>PAR/FAR:61</from></line>
+<line><to>PAR/FAR:61</to><from>PAR/FAR:56</from></line>
+<line><to>PAR/FAR:56</to><from>PAR/FAR:57</from></line>
+<line><to>PAR/FAR:60</to><from>PAR/FAR:56</from></line>
+<line><to>PAR/FAR:59d</to><from>PAR/FAR:60</from></line>
+<line><to>PAR/FAR:60</to><from>PAR/FAR:33</from></line>
+<line><to>PAR/FAR:32</to><from>PAR/FAR:33</from></line>
+<line><to>PAR/FAR:31</to><from>PAR/FAR:32</from></line>
+<line><to>PAR/FAR:34</to><from>PAR/FAR:33</from></line>
+<line><to>PAR/FAR:58dh</to><from>PAR/FAR:34</from></line>
+<line><to>PAR/FAR:34</to><from>PAR/FAR:18</from></line>
+<line><to>PAR/FAR:18</to><from>PAR/FAR:16</from></line>
+<line><to>PAR/FAR:15</to><from>PAR/FAR:16</from></line>
+<line><to>PAR/FAR:14</to><from>PAR/FAR:15</from></line>
+<line><to>PAR/FAR:12</to><from>PAR/FAR:14</from></line>
+<line><to>PAR/FAR:10</to><from>PAR/FAR:12</from></line>
+<line><to>PAR/FAR:11</to><from>PAR/FAR:10</from></line>
+<line><to>PAR/FAR:9</to><from>PAR/FAR:10</from></line>
+<line><to>PAR/FAR:7</to><from>PAR/FAR:9</from></line>
+<line><to>PAR/FAR:8</to><from>PAR/FAR:7</from></line>
+<line><to>PAR/FAR:11</to><from>PAR/FAR:8</from></line>
+<line><to>PAR/FAR:6</to><from>PAR/FAR:7</from></line>
+<line><to>PAR/FAR:5</to><from>PAR/FAR:6</from></line>
+<line><to>PAR/FAR:4</to><from>PAR/FAR:5</from></line>
+<line><to>PAR/FAR:6</to><from>PAR/FAR:4</from></line>
+<line><to>PAR/FAR:65</to><from>PAR/FAR:5</from></line>
+<line><to>PAR/FAR:66d</to><from>PAR/FAR:65</from></line>
+<line><to>PAR/FAR:63</to><from>PAR/FAR:65</from></line>
+<line><to>PAR/FAR:64d</to><from>PAR/FAR:63</from></line>
+<line><to>PAR/FAR:3</to><from>PAR/FAR:4</from></line>
+<line><to>PAR/FAR:20</to><from>PAR/FAR:18</from></line>
+<line><to>PAR/FAR:19</to><from>PAR/FAR:20</from></line>
+<line><to>PAR/FAR:17</to><from>PAR/FAR:19</from></line>
+<line><to>PAR/FAR:21</to><from>PAR/FAR:19</from></line>
+<line><to>PAR/FAR:38</to><from>PAR/FAR:21</from></line>
+<line><to>PAR/FAR:37</to><from>PAR/FAR:38</from></line>
+<line><to>PAR/FAR:36</to><from>PAR/FAR:37</from></line>
+<line><to>PAR/FAR:39</to><from>PAR/FAR:36</from></line>
+<line><to>PAR/FAR:40</to><from>PAR/FAR:39</from></line>
+<line><to>PAR/FAR:55</to><from>PAR/FAR:40</from></line>
+<line><to>PAR/FAR:54d</to><from>PAR/FAR:55</from></line>
+<line><to>PAR/FAR:18</to><from>PAR/FAR:36</from></line>
+<line><to>PAR/FAR:35</to><from>PAR/FAR:36</from></line>
+<line><to>PAR/FAR:43</to><from>PAR/FAR:35</from></line>
+<line><to>PAR/FAR:52d</to><from>PAR/FAR:43</from></line>
+<line><to>PAR/FAR:42</to><from>PAR/FAR:43</from></line>
+<line><to>PAR/FAR:51dh</to><from>PAR/FAR:42</from></line>
+<line><to>PAR/FAR:41</to><from>PAR/FAR:42</from></line>
+<line><to>PAR/FAR:50d</to><from>PAR/FAR:41</from></line>
+<line><to>PAR/FAR:29</to><from>PAR/FAR:41</from></line>
+<line><to>PAR/FAR:30</to><from>PAR/FAR:29</from></line>
+<line><to>PAR/FAR:32</to><from>PAR/FAR:29</from></line>
+<line><to>PAR/FAR:31</to><from>PAR/FAR:30</from></line>
+<line><to>PAR/FAR:28</to><from>PAR/FAR:29</from></line>
+<line><to>PAR/FAR:26</to><from>PAR/FAR:28</from></line>
+<line><to>PAR/FAR:27</to><from>PAR/FAR:26</from></line>
+<line><to>PAR/FAR:48</to><from>PAR/FAR:27</from></line>
+<line><to>PAR/FAR:47d</to><from>PAR/FAR:48</from></line>
+<line><to>PAR/FAR:46</to><from>PAR/FAR:48</from></line>
+<line><to>PAR/FAR:49d</to><from>PAR/FAR:46</from></line>
+<line><to>PAR/FAR:23</to><from>PAR/FAR:26</from></line>
+<line><to>PAR/FAR:44</to><from>PAR/FAR:55</from></line>
+<line><to>PAR/FAR:45</to><from>PAR/FAR:44</from></line>
+<line><to>PAR/FAR:53d</to><from>PAR/FAR:45</from></line>
+<line><to>PAR/FAR:22</to><from>PAR/FAR:21</from></line>
+<line><to>PAR/FAR:23</to><from>PAR/FAR:22</from></line>
+<line><to>PAR/FAR:24</to><from>PAR/FAR:23</from></line>
+<line><to>PAR/FAR:25</to><from>PAR/FAR:24</from></line>
+<line><to>PAR/FAR:22</to><from>PAR/FAR:25</from></line>
+<line><to>PAR/FAR:12</to><from>PAR/FAR:13</from></line>
+<line><to>PAR/FAR:17</to><from>PAR/FAR:14</from></line>
+<line><to>Wright:2</to><from>Wright:12</from></line>
+<line><to>Wright:12</to><from>Wright:4</from></line>
+<line><to>Wright:20</to><from>Wright:2</from></line>
+<line><to>Wright:19</to><from>Wright:20</from></line>
+<line><to>Wright:29dh</to><from>Wright:22</from></line>
+<line><to>Wright:18</to><from>Wright:19</from></line>
+<line><to>Wright:17</to><from>Wright:18</from></line>
+<line><to>Wright:41</to><from>Wright:17</from></line>
+<line><to>Wright:41</to><from>Wright:40</from></line>
+<line><to>Wright:37</to><from>Wright:38</from></line>
+<line><to>Wright:36</to><from>Wright:37</from></line>
+<line><to>Wright:33</to><from>Wright:36</from></line>
+<line><to>Wright:31</to><from>Wright:33</from></line>
+<line><to>Wright:32</to><from>Wright:34</from></line>
+<line><to>Wright:16</to><from>Wright:31</from></line>
+<line><to>Wright:15</to><from>Wright:16</from></line>
+<line><to>Wright:14</to><from>Wright:15</from></line>
+<line><to>Wright:13</to><from>Wright:14</from></line>
+<line><to>Wright:24d</to><from>Wright:23</from></line>
+<line><to>Wright:1</to><from>Wright:13</from></line>
+<line><to>Wright:9</to><from>Wright:1</from></line>
+<line><to>Wright:7d</to><from>Wright:1</from></line>
+<line><to>Wright:8d</to><from>Wright:1</from></line>
+<line><to>Wright:10</to><from>Wright:1</from></line>
+<line><to>Wright:8d</to><from>Wright:10</from></line>
+<line><to>Wright:7d</to><from>Wright:10</from></line>
+<line><to>Wright:9</to><from>Wright:10</from></line>
+<line><to>Wright:9</to><from>Wright:8d</from></line>
+<line><to>Wright:9</to><from>Wright:7d</from></line>
+<line><to>Wright:5</to><from>Wright:9</from></line>
+<line><to>Wright:5</to><from>Wright:7d</from></line>
+<line><to>Wright:3</to><from>Wright:5</from></line>
+<line><to>Wright:3</to><from>Wright:4</from></line>
+<line><to>Wright:5</to><from>Wright:6d</from></line>
+<line><to>Wright:10</to><from>Wright:2</from></line>
+<line><to>Wright:8d</to><from>Wright:2</from></line>
+<line><to>Wright:22</to><from>Wright:20</from></line>
+<line><to>Wright:23</to><from>Wright:22</from></line>
+<line><to>Wright:13</to><from>Wright:23</from></line>
+<line><to>Wright:29dh</to><from>Wright:30dh</from></line>
+<line><to>Wright:2</to><from>Wright:21</from></line>
+<line><to>Wright:28d</to><from>Wright:19</from></line>
+<line><to>Wright:14</to><from>Wright:25d</from></line>
+<line><to>Wright:15</to><from>Wright:26d</from></line>
+<line><to>Wright:27dh</to><from>Wright:18</from></line>
+<line><to>Wright:17</to><from>Wright:16</from></line>
+<line><to>Wright:32</to><from>Wright:41</from></line>
+<line><to>Wright:31</to><from>Wright:32</from></line>
+<line><to>Wright:34</to><from>Wright:35d</from></line>
+<line><to>Wright:33</to><from>Wright:34</from></line>
+<line><to>Wright:37</to><from>Wright:39d</from></line>
+<line><to>Wright:40</to><from>Wright:38</from></line>
+<line><to>BIF,Huff,Art:49</to><from>BIF,Huff,Art:51</from></line>
+<line><to>BIF,Huff,Art:48</to><from>BIF,Huff,Art:49</from></line>
+<line><to>BIF,Huff,Art:48</to><from>BIF,Huff,Art:47</from></line>
+<line><to>BIF,Huff,Art:49</to><from>BIF,Huff,Art:26D</from></line>
+<line><to>BIF,Huff,Art:50</to><from>BIF,Huff,Art:49</from></line>
+<line><to>BIF,Huff,Art:51</to><from>BIF,Huff,Art:50</from></line>
+<line><to>BIF,Huff,Art:32</to><from>BIF,Huff,Art:51</from></line>
+<line><to>BIF,Huff,Art:27</to><from>BIF,Huff,Art:32</from></line>
+<line><to>BIF,Huff,Art:28</to><from>BIF,Huff,Art:27</from></line>
+<line><to>BIF,Huff,Art:29</to><from>BIF,Huff,Art:28</from></line>
+<line><to>BIF,Huff,Art:70</to><from>BIF,Huff,Art:27</from></line>
+<line><to>BIF,Huff,Art:69</to><from>BIF,Huff,Art:70</from></line>
+<line><to>BIF,Huff,Art:BIF16</to><from>BIF,Huff,Art:69</from></line>
+<line><to>BIF,Huff,Art:68</to><from>BIF,Huff,Art:BIF16</from></line>
+<line><to>BIF,Huff,Art:BIF12</to><from>BIF,Huff,Art:68</from></line>
+<line><to>BIF,Huff,Art:BIF11</to><from>BIF,Huff,Art:BIF12</from></line>
+<line><to>BIF,Huff,Art:39</to><from>BIF,Huff,Art:BIF11</from></line>
+<line><to>BIF,Huff,Art:38</to><from>BIF,Huff,Art:39</from></line>
+<line><to>BIF,Huff,Art:20</to><from>BIF,Huff,Art:38</from></line>
+<line><to>BIF,Huff,Art:18</to><from>BIF,Huff,Art:20</from></line>
+<line><to>BIF,Huff,Art:19</to><from>BIF,Huff,Art:18</from></line>
+<line><to>BIF,Huff,Art:40</to><from>BIF,Huff,Art:19</from></line>
+<line><to>BIF,Huff,Art:42</to><from>BIF,Huff,Art:40</from></line>
+<line><to>BIF,Huff,Art:48</to><from>BIF,Huff,Art:42</from></line>
+<line><to>BIF,Huff,Art:49</to><from>BIF,Huff,Art:48</from></line>
+<line><to>BIF,Huff,Art:26D</to><from>BIF,Huff,Art:49</from></line>
+<line><to>BIF,Huff,Art:17d</to><from>BIF,Huff,Art:47</from></line>
+<line><to>BIF,Huff,Art:36</to><from>BIF,Huff,Art:34</from></line>
+<line><to>BIF,Huff,Art:35</to><from>BIF,Huff,Art:36</from></line>
+<line><to>BIF,Huff,Art:33</to><from>BIF,Huff,Art:35</from></line>
+<line><to>BIF,Huff,Art:39</to><from>BIF,Huff,Art:37</from></line>
+<line><to>BIF,Huff,Art:15dh</to><from>BIF,Huff,Art:BIF10</from></line>
+<line><to>BIF,Huff,Art:62</to><from>BIF,Huff,Art:63</from></line>
+<line><to>Armory:12</to><from>Armory:2</from></line>
+<line><to>Armory:11</to><from>Armory:12</from></line>
+<line><to>Armory:10</to><from>Armory:11</from></line>
+<line><to>Armory:9</to><from>Armory:10</from></line>
+<line><to>Armory:8</to><from>Armory:9</from></line>
+<line><to>Armory:7</to><from>Armory:8</from></line>
+<line><to>Armory:6</to><from>Armory:7</from></line>
+<line><to>Armory:5</to><from>Armory:6</from></line>
+<line><to>Armory:4</to><from>Armory:5</from></line>
+<line><to>Armory:1</to><from>Armory:4</from></line>
+<line><to>Armory:3</to><from>Armory:1</from></line>
+<line><to>Armory:2</to><from>Armory:3</from></line>
+<line><to>Armory:16</to><from>Armory:2</from></line>
+<line><to>Armory:15</to><from>Armory:16</from></line>
+<line><to>Armory:30dh</to><from>Armory:15</from></line>
+<line><to>Armory:14</to><from>Armory:15</from></line>
+<line><to>Armory:12</to><from>Armory:14</from></line>
+<line><to>Armory:18</to><from>Armory:3</from></line>
+<line><to>Armory:24dBOOKMARK</to><from>Armory:18</from></line>
+<line><to>Armory:17</to><from>Armory:18</from></line>
+<line><to>Armory:16</to><from>Armory:17</from></line>
+<line><to>Armory:13</to><from>Armory:14</from></line>
+<line><to>Armory:11</to><from>Armory:13</from></line>
+<line><to>Armory:11</to><from>Armory:29dh</from></line>
+<line><to>Armory:26d</to><from>Armory:1</from></line>
+<line><to>Armory:19</to><from>Armory:4</from></line>
+<line><to>Armory:25dhBOOKMARK</to><from>Armory:19</from></line>
+<line><to>Armory:20</to><from>Armory:19</from></line>
+<line><to>Armory:21</to><from>Armory:20</from></line>
+<line><to>Armory:22</to><from>Armory:21</from></line>
+<line><to>Armory:27dh</to><from>Armory:22</from></line>
+<line><to>Armory:23</to><from>Armory:22</from></line>
+<line><to>Armory:9</to><from>Armory:28d</from></line>
+<line><to>Armory:6</to><from>Armory:32dh</from></line>
+<line><to>Armory:7</to><from>Armory:31d</from></line>
+<line><to>Armory:19</to><from>Armory:18</from></line>
+<line><to>almaMater.wi:alma.wi 2</to><from>almaMater.wi:alma.wi 3</from></line>
+<line><to>altgeldHall.wi:Ah.wi 5</to><from>almaMater.wi:alma.wi 3</from></line>
+<line><to>altgeldHall.wi:Ah.wi 6</to><from>altgeldHall.wi:Ah.wi 5</from></line>
+<line><to>altgeldHall.wi:Ah.wi 7</to><from>altgeldHall.wi:Ah.wi 6</from></line>
+<line><to>altgeldHall.wi:Ah.wi 8</to><from>altgeldHall.wi:Ah.wi 7</from></line>
+<line><to>altgeldHall.wi:Ah.wi 9</to><from>altgeldHall.wi:Ah.wi 8</from></line>
+<line><to>altgeldHall.wi:Ah.wi 17</to><from>altgeldHall.wi:Ah.wi 9</from></line>
+<line><to>altgeldHall.wi:Ah.wi 14</to><from>altgeldHall.wi:Ah.wi 17</from></line>
+<line><to>altgeldHall.wi:Ah.wi 16</to><from>altgeldHall.wi:Ah.wi 14</from></line>
+<line><to>henryAdministrationBuilding.wi:Hab.wi 5</to><from>altgeldHall.wi:Ah.wi 16</from></line>
+<line><to>union.wi:U.wi</to><from>henryAdministrationBuilding.wi:Hab.wi 5</from></line>
+<line><to>union.points:U.br 1</to><from>union.wi:U.wi</from></line>
+<line><to>quad.wi:quad.wi</to><from>union.points:U.br 1</from></line>
+<line><to>altgeldHall.wi:Ah.wi 15</to><from>altgeldHall.wi:Ah.wi 14</from></line>
+<line><to>altgeldHall.wi:Ah.wi 16</to><from>altgeldHall.wi:Ah.wi 15</from></line>
+<line><to>altgeldHall.points:Ah.br</to><from>altgeldHall.wi:Ah.wi 16</from></line>
+<line><to>altgeldHall.wi:Ah.wi 10</to><from>altgeldHall.points:Ah.br</from></line>
+<line><to>altgeldHall.wi:Ah.wi 15</to><from>altgeldHall.wi:Ah.wi 10</from></line>
+<line><to>altgeldHall.points:Ah.br</to><from>altgeldHall.wi:Ah.wi 15</from></line>
+<line><to>altgeldHall.wi:Ah.wi 11</to><from>altgeldHall.wi:Ah.wi 10</from></line>
+<line><to>altgeldHall.wi:Ah.wi 12</to><from>altgeldHall.wi:Ah.wi 11</from></line>
+<line><to>altgeldHall.points:Ah.d 2</to><from>altgeldHall.wi:Ah.wi 12</from></line>
+<line><to>union.wi:U.wi 1</to><from>altgeldHall.wi:Ah.wi 12</from></line>
+<line><to>altgeldHall.wi:Ah.wi 13</to><from>union.wi:U.wi 1</from></line>
+<line><to>altgeldHall.wi:Ah.wi</to><from>altgeldHall.wi:Ah.wi 13</from></line>
+<line><to>altgeldHall.wi:Ah.wi 2</to><from>altgeldHall.wi:Ah.wi</from></line>
+<line><to>altgeldHall.points:Ah.d 1</to><from>altgeldHall.wi:Ah.wi 2</from></line>
+<line><to>altgeldHall.wi:Ah.wi 3</to><from>altgeldHall.wi:Ah.wi 2</from></line>
+<line><to>altgeldHall.wi:Ah.wi 4</to><from>altgeldHall.wi:Ah.wi 3</from></line>
+<line><to>almaMater.wi:alma.wi</to><from>altgeldHall.wi:Ah.wi 3</from></line>
+<line><to>altgeldHall.wi:Ah.wi 1</to><from>almaMater.wi:alma.wi</from></line>
+<line><to>altgeldHall.wi:Ah.wi</to><from>altgeldHall.wi:Ah.wi 1</from></line>
+<line><to>almaMater.wi:alma.wi 1</to><from>altgeldHall.wi:Ah.wi 1</from></line>
+<line><to>union.wi:U.wi 3</to><from>almaMater.wi:alma.wi 1</from></line>
+<line><to>almaMater.wi:alma.wi 2</to><from>almaMater.wi:alma.wi 1</from></line>
+<line><to>almaMater.wi:alma.wi 2</to><from>union.wi:U.wi 3</from></line>
+<line><to>altgeldHall.wi:Ah.wi 3</to><from>altgeldHall.points:Ah.d 1</from></line>
+<line><to>altgeldHall.wi:Ah.wi 1</to><from>altgeldHall.wi:Ah.wi 2</from></line>
+<line><to>altgeldHall.wi:Ah.wi 5</to><from>altgeldHall.wi:Ah.wi 4</from></line>
+<line><to>altgeldHall.wi:Ah.wi 6</to><from>altgeldHall.wi:Ah.wi 4</from></line>
+<line><to>almaMater.wi:alma.wi 3</to><from>almaMater.wi:alma.wi</from></line>
+<line><to>union.wi:U.wi 4</to><from>almaMater.wi:alma.wi 2</from></line>
+<line><to>union.points:U.d 7</to><from>union.wi:U.wi 4</from></line>
+<line><to>union.wi:U.wi 5</to><from>union.points:U.d 7</from></line>
+<line><to>union.points:U.dh 3</to><from>union.wi:U.wi 5</from></line>
+<line><to>almaMater.wi:alma.wi 1</to><from>almaMater.wi:alma.wi</from></line>
+<line><to>union.points:U.do</to><from>union.wi:U.wi 3</from></line>
+<line><to>union.wi:U.wi 2</to><from>union.points:U.do</from></line>
+<line><to>altgeldHall.wi:Ah.wi 13</to><from>union.wi:U.wi 2</from></line>
+<line><to>union.wi:U.wi 1</to><from>union.wi:U.wi 2</from></line>
+<line><to>union.points:U.s 1</to><from>union.wi:U.wi 2</from></line>
+<line><to>union.points:U.d 5</to><from>union.wi:U.wi 2</from></line>
+<line><to>union.points:U.d 4</to><from>union.wi:U.wi 1</from></line>
+<line><to>union.points:U.d 5</to><from>union.points:U.d 4</from></line>
+<line><to>union.wi:U.wi 6</to><from>union.points:U.dh 3</from></line>
+<line><to>union.wi:U.wi 7</to><from>union.wi:U.wi 6</from></line>
+<line><to>naturalHistoryBuilding.wi:Nhb.wi 2</to><from>union.wi:U.wi 7</from></line>
+<line><to>union.wi:U.wi 8</to><from>union.wi:U.wi 7</from></line>
+<line><to>naturalHistoryBuilding.wi:Nhb.wi 2</to><from>union.wi:U.wi 8</from></line>
+<line><to>naturalHistoryBuilding.wi:Nhb.wi 3</to><from>union.wi:U.wi 8</from></line>
+<line><to>naturalHistoryBuilding.wi:Nhb.wi 3</to><from>naturalHistoryBuilding.wi:Nhb.wi 2</from></line>
+<line><to>naturalHistoryBuilding.points:Nhb.d 3</to><from>naturalHistoryBuilding.wi:Nhb.wi 3</from></line>
+<line><to>naturalHistoryBuilding.points:Nhb.d</to><from>naturalHistoryBuilding.points:Nhb.d 3</from></line>
+<line><to>harkerHall.wi:Hh.wi 1</to><from>naturalHistoryBuilding.points:Nhb.d 3</from></line>
+<line><to>harkerHall.points:Hh.dh</to><from>harkerHall.wi:Hh.wi 1</from></line>
+<line><to>harkerHall.wi:Hh.wi</to><from>harkerHall.wi:Hh.wi 1</from></line>
+<line><to>harkerHall.wi:Hh.wi</to><from>harkerHall.points:Hh.dh</from></line>
+<line><to>union.points:U.dh</to><from>harkerHall.wi:Hh.wi</from></line>
+<line><to>union.points:U.s</to><from>harkerHall.wi:Hh.wi</from></line>
+<line><to>union.points:U.d</to><from>union.points:U.s</from></line>
+<line><to>union.points:U.s</to><from>harkerHall.points:Hh.d 1</from></line>
+<line><to>union.points:U.br</to><from>harkerHall.points:Hh.d 1</from></line>
+<line><to>quad.wi:quad.wi 1</to><from>union.points:U.br</from></line>
+<line><to>quad.wi:quad.wi 15</to><from>quad.wi:quad.wi 1</from></line>
+<line><to>union.points:U.dh 1</to><from>quad.wi:quad.wi 15</from></line>
+<line><to>quad.wi:quad.wi 14</to><from>quad.wi:quad.wi 15</from></line>
+<line><to>union.points:U.d 3</to><from>quad.wi:quad.wi 14</from></line>
+<line><to>union.points:U.dh 1</to><from>union.points:U.d 3</from></line>
+<line><to>quad.wi:quad.wi</to><from>quad.wi:quad.wi 14</from></line>
+<line><to>naturalHistoryBuilding.wi:Nhb.wi 1</to><from>union.wi:U.wi 7</from></line>
+<line><to>naturalHistoryBuilding.wi:Nhb.wi 1</to><from>naturalHistoryBuilding.wi:Nhb.wi 2</from></line>
+<line><to>naturalHistoryBuilding.wi:Nhb.wi</to><from>naturalHistoryBuilding.wi:Nhb.wi 1</from></line>
+<line><to>naturalHistoryBuilding.points:Nhb.d 1</to><from>naturalHistoryBuilding.wi:Nhb.wi</from></line>
+<line><to>naturalHistoryBuilding.points:Nhb.d 2</to><from>naturalHistoryBuilding.wi:Nhb.wi 3</from></line>
+<line><to>naturalHistoryBuilding.points:Nhb.d 1</to><from>noyesLaboratory.wi:Ny.wi 4</from></line>
+<line><to>noyesLaboratory.points:Ny.dh</to><from>noyesLaboratory.wi:Ny.wi 4</from></line>
+<line><to>noyesLaboratory.points:Ny.br 1</to><from>noyesLaboratory.wi:Ny.wi 4</from></line>
+<line><to>noyesLaboratory.points:Ny.d 3</to><from>noyesLaboratory.points:Ny.br 1</from></line>
+<line><to>harkerHall.wi:Hh.wi 4</to><from>noyesLaboratory.points:Ny.br 1</from></line>
+<line><to>harkerHall.wi:Hh.wi 3</to><from>harkerHall.wi:Hh.wi 4</from></line>
+<line><to>harkerHall.wi:Hh.wi 2</to><from>harkerHall.wi:Hh.wi 3</from></line>
+<line><to>harkerHall.points:Hh.d</to><from>harkerHall.wi:Hh.wi 2</from></line>
+<line><to>harkerHall.wi:Hh.wi 1</to><from>harkerHall.points:Hh.d</from></line>
+<line><to>noyesLaboratory.points:Ny.d 3</to><from>harkerHall.wi:Hh.wi 4</from></line>
+<line><to>noyesLaboratory.points:Ny.br 1</to><from>noyesLaboratory.points:Ny.dh</from></line>
+<line><to>noyesLaboratory.wi:Ny.wi 1</to><from>harkerHall.wi:Hh.wi 4</from></line>
+<line><to>quad.wi:quad.wi 17</to><from>quad.wi:quad.wi 15</from></line>
+<line><to>quad.wi:quad.wi 16</to><from>quad.wi:quad.wi 14</from></line>
+<line><to>quad.wi:quad.wi 16</to><from>quad.wi:quad.wi</from></line>
+<line><to>henryAdministrationBuilding.wi:Hab.wi 6</to><from>quad.wi:quad.wi</from></line>
+<line><to>henryAdministrationBuilding.wi:Hab.wi 7</to><from>henryAdministrationBuilding.wi:Hab.wi 6</from></line>
+<line><to>henryAdministrationBuilding.points:Hab.d 4</to><from>henryAdministrationBuilding.wi:Hab.wi 7</from></line>
+<line><to>henryAdministrationBuilding.points:Hab.do 1</to><from>henryAdministrationBuilding.wi:Hab.wi 7</from></line>
+<line><to>henryAdministrationBuilding.wi:Hab.wi 8</to><from>henryAdministrationBuilding.wi:Hab.wi 7</from></line>
+<line><to>henryAdministrationBuilding.wi:Hab.wi 8</to><from>henryAdministrationBuilding.wi:Hab.wi 6</from></line>
+<line><to>henryAdministrationBuilding.wi:Hab.wi 8</to><from>quad.wi:quad.wi</from></line>
+<line><to>quad.wi:quad.wi 18</to><from>quad.wi:quad.wi 16</from></line>
+<line><to>quad.wi:quad.wi 18</to><from>quad.wi:quad.wi 17</from></line>
+<line><to>noyesLaboratory.points:Ny.d 4</to><from>noyesLaboratory.wi:Ny.wi</from></line>
+<line><to>noyesLaboratory.wi:Ny.wi 2</to><from>noyesLaboratory.wi:Ny.wi 1</from></line>
+<line><to>quad.wi:quad.wi 18</to><from>quad.wi:quad.wi 4</from></line>
+<line><to>quad.wi:quad.wi 3</to><from>quad.wi:quad.wi 18</from></line>
+<line><to>quad.wi:quad.wi 2</to><from>quad.wi:quad.wi 3</from></line>
+<line><to>henryAdministrationBuilding.wi:Hab.wi 8</to><from>quad.wi:quad.wi 2</from></line>
+<line><to>quad.wi:quad.wi 5</to><from>quad.wi:quad.wi 2</from></line>
+<line><to>englishBuilding.wi:Eb.wi 6</to><from>quad.wi:quad.wi 2</from></line>
+<line><to>henryAdministrationBuilding.points:Hab.d</to><from>englishBuilding.wi:Eb.wi 6</from></line>
+<line><to>henryAdministrationBuilding.points:Hab.dh</to><from>englishBuilding.wi:Eb.wi 4</from></line>
+<line><to>altgeldHall.wi:Ah.wi 17</to><from>henryAdministrationBuilding.points:Hab.d 1</from></line>
+<line><to>quad.wi:quad.wi 5</to><from>quad.wi:quad.wi 3</from></line>
+<line><to>quad.wi:quad.wi 4</to><from>quad.wi:quad.wi 3</from></line>
+<line><to>noyesLaboratory.points:Ny.br</to><from>noyesLaboratory.wi:Ny.wi 3</from></line>
+<line><to>noyesLaboratory.points:Ny.d 4</to><from>noyesLaboratory.points:Ny.br</from></line>
+<line><to>noyesLaboratory.points:Ny.d</to><from>noyesLaboratory.wi:Ny.wi 3</from></line>
+<line><to>noyesLaboratory.points:Ny.d 1</to><from>noyesLaboratory.wi:Ny.wi 3</from></line>
+<line><to>noyesLaboratory.wi:Ny.wi 4</to><from>noyesLaboratory.points:Ny.d 2</from></line>
+<line><to>englishBuilding.wi:Eb.wi 3</to><from>englishBuilding.wi:Eb.wi 4</from></line>
+<line><to>englishBuilding.wi:Eb.wi 2</to><from>englishBuilding.wi:Eb.wi 3</from></line>
+<line><to>englishBuilding.wi:Eb.wi 1</to><from>englishBuilding.wi:Eb.wi 2</from></line>
+<line><to>englishBuilding.points:Eb.dh</to><from>englishBuilding.wi:Eb.wi 1</from></line>
+<line><to>englishBuilding.wi:Eb.wi</to><from>englishBuilding.wi:Eb.wi 1</from></line>
+<line><to>englishBuilding.wi:Eb.wi 19</to><from>englishBuilding.wi:Eb.wi</from></line>
+<line><to>englishBuilding.wi:Eb.wi 20</to><from>englishBuilding.wi:Eb.wi 19</from></line>
+<line><to>englishBuilding.wi:Eb.wi 1</to><from>englishBuilding.wi:Eb.wi 20</from></line>
+<line><to>englishBuilding.wi:Eb.wi 18</to><from>englishBuilding.wi:Eb.wi 19</from></line>
+<line><to>englishBuilding.wi:Eb.wi 17</to><from>englishBuilding.wi:Eb.wi 18</from></line>
+<line><to>englishBuilding.wi:Eb.wi 16</to><from>englishBuilding.wi:Eb.wi 17</from></line>
+<line><to>englishBuilding.wi:Eb.wi 18</to><from>englishBuilding.wi:Eb.wi 16</from></line>
+<line><to>englishBuilding.points:Eb.d</to><from>englishBuilding.wi:Eb.wi 16</from></line>
+<line><to>englishBuilding.wi:Eb.wi 15</to><from>englishBuilding.wi:Eb.wi 16</from></line>
+<line><to>englishBuilding.wi:Eb.wi 14</to><from>englishBuilding.wi:Eb.wi 15</from></line>
+<line><to>englishBuilding.wi:Eb.wi 17</to><from>englishBuilding.wi:Eb.wi 14</from></line>
+<line><to>englishBuilding.wi:Eb.wi 26</to><from>englishBuilding.wi:Eb.wi 14</from></line>
+<line><to>englishBuilding.wi:Eb.wi 28</to><from>englishBuilding.wi:Eb.wi 26</from></line>
+<line><to>lincolnHall.wi:Lh.wi</to><from>englishBuilding.wi:Eb.wi 28</from></line>
+<line><to>englishBuilding.wi:Eb.wi 18</to><from>lincolnHall.wi:Lh.wi</from></line>
+<line><to>englishBuilding.points:Aap.d</to><from>englishBuilding.wi:Eb.wi 14</from></line>
+<line><to>englishBuilding.wi:Eb.wi 24</to><from>englishBuilding.points:Aap.d</from></line>
+<line><to>englishBuilding.wi:Eb.wi 25</to><from>englishBuilding.wi:Eb.wi 24</from></line>
+<line><to>englishBuilding.wi:Eb.wi 27</to><from>englishBuilding.wi:Eb.wi 25</from></line>
+<line><to>englishBuilding.wi:Eb.wi 28</to><from>englishBuilding.wi:Eb.wi 27</from></line>
+<line><to>englishBuilding.wi:Eb.wi 26</to><from>englishBuilding.wi:Eb.wi 25</from></line>
+<line><to>englishBuilding.wi:Eb.wi 13</to><from>englishBuilding.points:Aap.d</from></line>
+<line><to>englishBuilding.wi:Eb.wi 24</to><from>englishBuilding.wi:Eb.wi 13</from></line>
+<line><to>englishBuilding.wi:Eb.wi 23</to><from>englishBuilding.wi:Eb.wi 24</from></line>
+<line><to>englishBuilding.wi:Eb.wi 27</to><from>englishBuilding.wi:Eb.wi 23</from></line>
+<line><to>englishBuilding.wi:Eb.wi 22</to><from>englishBuilding.wi:Eb.wi 23</from></line>
+<line><to>englishBuilding.wi:Eb.wi 21</to><from>englishBuilding.wi:Eb.wi 22</from></line>
+<line><to>englishBuilding.wi:Eb.wi 12</to><from>englishBuilding.wi:Eb.wi 21</from></line>
+<line><to>englishBuilding.wi:Eb.wi 13</to><from>englishBuilding.wi:Eb.wi 12</from></line>
+<line><to>englishBuilding.wi:Eb.wi 22</to><from>englishBuilding.wi:Eb.wi 13</from></line>
+<line><to>englishBuilding.wi:Eb.wi 6</to><from>englishBuilding.wi:Eb.wi 4</from></line>
+<line><to>englishBuilding.wi:Eb.wi 5</to><from>englishBuilding.wi:Eb.wi 6</from></line>
+<line><to>englishBuilding.wi:Eb.wi 7</to><from>englishBuilding.wi:Eb.wi 5</from></line>
+<line><to>englishBuilding.wi:Eb.wi 6</to><from>englishBuilding.wi:Eb.wi 7</from></line>
+<line><to>englishBuilding.wi:Eb.wi 8</to><from>englishBuilding.wi:Eb.wi 7</from></line>
+<line><to>englishBuilding.wi:Eb.wi 9</to><from>englishBuilding.wi:Eb.wi 8</from></line>
+<line><to>englishBuilding.wi:Eb.wi 10</to><from>englishBuilding.wi:Eb.wi 9</from></line>
+<line><to>englishBuilding.points:Eb.d 1</to><from>englishBuilding.wi:Eb.wi 10</from></line>
+<line><to>englishBuilding.wi:Eb.wi 12</to><from>englishBuilding.points:Eb.d 1</from></line>
+<line><to>englishBuilding.wi:Eb.wi 11</to><from>englishBuilding.wi:Eb.wi 12</from></line>
+<line><to>englishBuilding.wi:Eb.wi 21</to><from>englishBuilding.wi:Eb.wi 11</from></line>
+<line><to>quad.wi:quad.wi 7</to><from>englishBuilding.wi:Eb.wi 11</from></line>
+<line><to>englishBuilding.wi:Eb.wi 10</to><from>quad.wi:quad.wi 7</from></line>
+<line><to>quad.wi:quad.wi 5</to><from>englishBuilding.wi:Eb.wi 9</from></line>
+<line><to>quad.wi:quad.wi 8</to><from>englishBuilding.wi:Eb.wi 22</from></line>
+<line><to>lincolnHall.wi:Lh.wi 1</to><from>lincolnHall.wi:Lh.wi</from></line>
+<line><to>lincolnHall.wi:Lh.wi 2</to><from>lincolnHall.wi:Lh.wi 1</from></line>
+<line><to>lincolnHall.wi:Lh.wi 3</to><from>lincolnHall.wi:Lh.wi 2</from></line>
+<line><to>lincolnHall.wi:Lh.wi 4</to><from>lincolnHall.wi:Lh.wi 3</from></line>
+<line><to>lincolnHall.wi:Lh.wi 5</to><from>lincolnHall.wi:Lh.wi 4</from></line>
+<line><to>gregoryHall.wi:Gh.wi</to><from>lincolnHall.wi:Lh.wi 5</from></line>
+<line><to>gregoryHall.wi:Gh.wi 13</to><from>gregoryHall.wi:Gh.wi</from></line>
+<line><to>gregoryHall.wi:Gh.wi 16</to><from>gregoryHall.wi:Gh.wi 13</from></line>
+<line><to>gregoryHall.wi:Gh.wi 17</to><from>gregoryHall.wi:Gh.wi 16</from></line>
+<line><to>gregoryHall.wi:Gh.wi 19</to><from>gregoryHall.wi:Gh.wi 17</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 3</to><from>gregoryHall.wi:Gh.wi 19</from></line>
+<line><to>quad.wi:quad.wi 11</to><from>lincolnHall.wi:Lh.wi 5</from></line>
+<line><to>gregoryHall.wi:Gh.wi 20</to><from>gregoryHall.wi:Gh.wi 19</from></line>
+<line><to>gregoryHall.wi:Gh.wi 21</to><from>gregoryHall.wi:Gh.wi 20</from></line>
+<line><to>gregoryHall.wi:Gh.wi 22</to><from>gregoryHall.wi:Gh.wi 21</from></line>
+<line><to>gregoryHall.points:Gh.d 3</to><from>gregoryHall.wi:Gh.wi 22</from></line>
+<line><to>gregoryHall.points:Gh.do? 1</to><from>gregoryHall.wi:Gh.wi 22</from></line>
+<line><to>gregoryHall.points:Gh.do? 2</to><from>gregoryHall.wi:Gh.wi 21</from></line>
+<line><to>gregoryHall.wi:Gh.wi 12</to><from>gregoryHall.wi:Gh.wi 20</from></line>
+<line><to>gregoryHall.points:Gh.do? 3</to><from>gregoryHall.wi:Gh.wi 11</from></line>
+<line><to>gregoryHall.wi:Gh.wi 10</to><from>gregoryHall.points:Gh.d.settle</from></line>
+<line><to>gregoryHall.wi:Gh.wi 18</to><from>gregoryHall.wi:Gh.wi 17</from></line>
+<line><to>gregoryHall.points:Gh.do?</to><from>gregoryHall.wi:Gh.wi 18</from></line>
+<line><to>gregoryHall.wi:Gh.wi 15</to><from>gregoryHall.wi:Gh.wi 16</from></line>
+<line><to>gregoryHall.wi:Gh.wi 14</to><from>gregoryHall.wi:Gh.wi 13</from></line>
+<line><to>gregoryHall.points:Gh.dh</to><from>gregoryHall.wi:Gh.wi 14</from></line>
+<line><to>gregoryHall.wi:Gh.wi 14</to><from>gregoryHall.wi:Gh.wi 15</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 4</to><from>quad.wi:quad.wi 13</from></line>
+<line><to>quad.wi:quad.wi 11</to><from>foellingerAuditorium.wi:Fol.wi 4</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 3</to><from>quad.wi:quad.wi 11</from></line>
+<line><to>foellingerAuditorium.points:Fol.d 1</to><from>foellingerAuditorium.wi:Fol.wi 3</from></line>
+<line><to>gregoryHall.wi:Gh.wi 12</to><from>foellingerAuditorium.wi:Fol.wi 3</from></line>
+<line><to>foellingerAuditorium.points:Fol.d</to><from>gregoryHall.wi:Gh.wi 12</from></line>
+<line><to>gregoryHall.wi:Gh.wi 11</to><from>gregoryHall.wi:Gh.wi 12</from></line>
+<line><to>foellingerAuditorium.points:Fol.do 4</to><from>gregoryHall.wi:Gh.wi 11</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 2</to><from>gregoryHall.wi:Gh.wi 11</from></line>
+<line><to>gregoryHall.wi:Gh.wi 10</to><from>foellingerAuditorium.wi:Fol.wi 2</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi</to><from>gregoryHall.wi:Gh.wi 10</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 1</to><from>foellingerAuditorium.wi:Fol.wi</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 2</to><from>foellingerAuditorium.wi:Fol.wi 1</from></line>
+<line><to>foellingerAuditorium.points:Fol.do 3</to><from>foellingerAuditorium.wi:Fol.wi 1</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 10</to><from>foellingerAuditorium.wi:Fol.wi 1</from></line>
+<line><to>foellingerAuditorium.points:Fol.do 2</to><from>foellingerAuditorium.wi:Fol.wi 10</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 9</to><from>foellingerAuditorium.wi:Fol.wi 10</from></line>
+<line><to>foellingerAuditorium.points:Fol.dh</to><from>foellingerAuditorium.wi:Fol.wi 9</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 9</to><from>foellingerAuditorium.wi:Fol.wi 8</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 7</to><from>foellingerAuditorium.wi:Fol.wi 8</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 12</to><from>foellingerAuditorium.wi:Fol.wi 7</from></line>
+<line><to>foellingerAuditorium.points:Fol.do 1</to><from>smithMemorialHall.wi:Smh.wi 12</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 6</to><from>smithMemorialHall.wi:Smh.wi 12</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 5</to><from>foellingerAuditorium.wi:Fol.wi 6</from></line>
+<line><to>foellingerAuditorium.points:Fol.do</to><from>foellingerAuditorium.wi:Fol.wi 5</from></line>
+<line><to>quad.wi:quad.wi 13</to><from>foellingerAuditorium.wi:Fol.wi 5</from></line>
+<line><to>foellingerAuditorium.points:Fol.d 2</to><from>foellingerAuditorium.wi:Fol.wi 4</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 28</to><from>foellingerAuditorium.wi:Fol.wi 10</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 11</to><from>undergradLibrary.wi:Ugl.wi 28</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 8</to><from>foellingerAuditorium.wi:Fol.wi 11</from></line>
+<line><to>gregoryHall.wi:Gh.wi 9</to><from>gregoryHall.wi:Gh.wi 10</from></line>
+<line><to>gregoryHall.wi:Gh.wi 8</to><from>gregoryHall.points:Gh.d</from></line>
+<line><to>gregoryHall.wi:Gh.wi 7</to><from>gregoryHall.points:Gh.d 1</from></line>
+<line><to>gregoryHall.wi:Gh.wi 5</to><from>gregoryHall.wi:Gh.wi 6</from></line>
+<line><to>gregoryHall.wi:Gh.wi 4</to><from>gregoryHall.wi:Gh.wi 5</from></line>
+<line><to>gregoryHall.wi:Gh.wi 3</to><from>gregoryHall.wi:Gh.wi 4</from></line>
+<line><to>gregoryHall.points:Gh.d 2</to><from>gregoryHall.wi:Gh.wi 3</from></line>
+<line><to>gregoryHall.wi:Gh.wi 2</to><from>gregoryHall.wi:Gh.wi 3</from></line>
+<line><to>gregoryHall.wi:Gh.wi 1</to><from>gregoryHall.wi:Gh.wi 2</from></line>
+<line><to>gregoryHall.wi:Gh.wi 5</to><from>gregoryHall.wi:Gh.wi 1</from></line>
+<line><to>gregoryHall.wi:Gh.wi</to><from>gregoryHall.wi:Gh.wi 1</from></line>
+<line><to>naturalHistoryBuilding.points:Nhb.d</to><from>naturalHistoryBuilding.wi:Nhb.wi 3</from></line>
+<line><to>harkerHall.points:Hh.d 2</to><from>harkerHall.wi:Hh.wi 3</from></line>
+<line><to>quad.wi:quad.wi 1</to><from>harkerHall.points:Hh.d 1</from></line>
+<line><to>harkerHall.wi:Hh.wi</to><from>harkerHall.points:Hh.d 1</from></line>
+<line><to>union.wi:U.wi</to><from>quad.wi:quad.wi</from></line>
+<line><to>union.wi:U.wi</to><from>altgeldHall.wi:Ah.wi 11</from></line>
+<line><to>altgeldHall.points:Ah.dh</to><from>altgeldHall.wi:Ah.wi 7</from></line>
+<line><to>altgeldHall.points:Ah.d</to><from>altgeldHall.wi:Ah.wi 8</from></line>
+<line><to>altgeldHall.points:Ah.dh</to><from>altgeldHall.points:Ah.d</from></line>
+<line><to>altgeldHall.wi:Ah.wi 10</to><from>altgeldHall.wi:Ah.wi 9</from></line>
+<line><to>henryAdministrationBuilding.wi:Hab.wi 3</to><from>henryAdministrationBuilding.wi:Hab.wi 4</from></line>
+<line><to>henryAdministrationBuilding.wi:Hab.wi 4</to><from>henryAdministrationBuilding.wi:Hab.wi 5</from></line>
+<line><to>henryAdministrationBuilding.points:Hab.d 3</to><from>henryAdministrationBuilding.wi:Hab.wi 4</from></line>
+<line><to>henryAdministrationBuilding.points:Hab.do</to><from>henryAdministrationBuilding.wi:Hab.wi 3</from></line>
+<line><to>henryAdministrationBuilding.points:Hab.d 2</to><from>henryAdministrationBuilding.wi:Hab.wi 3</from></line>
+<line><to>henryAdministrationBuilding.wi:Hab.wi 2</to><from>henryAdministrationBuilding.points:Hab.d 2</from></line>
+<line><to>henryAdministrationBuilding.wi:Hab.wi 1</to><from>henryAdministrationBuilding.wi:Hab.wi 2</from></line>
+<line><to>altgeldHall.wi:Ah.wi 17</to><from>henryAdministrationBuilding.wi:Hab.wi 1</from></line>
+<line><to>davenportHall.points:Dv.d 31</to><from>davenportHall.wi:Dv.wi 10</from></line>
+<line><to>davenportHall.wi:Dv.wi 11</to><from>davenportHall.points:Dv.d 21</from></line>
+<line><to>davenportHall.points:Dv.d 11</to><from>davenportHall.wi:Dv.wi 11</from></line>
+<line><to>davenportHall.wi:Dv.wi 5</to><from>davenportHall.points:Dv.d 41</from></line>
+<line><to>chemistryAnnex.wi:Ca.wi</to><from>chemistryAnnex.points:Ca.dh1</from></line>
+<line><to>davenportHall.wi:Dv.wi 3</to><from>davenportHall.points:Dv.dh1</from></line>
+<line><to>foreignLanguagesBuilding.wi:Flb.wi 8</to><from>davenportHall.wi:Dv.wi 2</from></line>
+<line><to>davenportHall.points:Dv.d 61</to><from>foreignLanguagesBuilding.wi:Flb.wi 10</from></line>
+<line><to>foreignLanguagesBuilding.points:Flb.d</to><from>foreignLanguagesBuilding.wi:Flb.wi 10</from></line>
+<line><to>foreignLanguagesBuilding.wi:Flb.wi 1</to><from>foreignLanguagesBuilding.points:Flb.d</from></line>
+<line><to>foreignLanguagesBuilding.points:Flb.s 1</to><from>foreignLanguagesBuilding.wi:Flb.wi 1</from></line>
+<line><to>foreignLanguagesBuilding.points:Flb.s 1</to><from>foreignLanguagesBuilding.wi:Flb.wi</from></line>
+<line><to>foreignLanguagesBuilding.points:Flb.d 4</to><from>foreignLanguagesBuilding.points:Flb.s 1</from></line>
+<line><to>foreignLanguagesBuilding.wi:Flb.wi 7</to><from>foreignLanguagesBuilding.points:Flb.d 4</from></line>
+<line><to>foreignLanguagesBuilding.wi:Flb.wi 6</to><from>foreignLanguagesBuilding.wi:Flb.wi 7</from></line>
+<line><to>foreignLanguagesBuilding.points:Flb.d 4</to><from>foreignLanguagesBuilding.wi:Flb.wi 6</from></line>
+<line><to>foreignLanguagesBuilding.wi:Flb.wi 6</to><from>smithMemorialHall.wi:Smh.wi 7</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 7</to><from>smithMemorialHall.points:Smh.d 1</from></line>
+<line><to>foreignLanguagesBuilding.points:Flb.d 3</to><from>foreignLanguagesBuilding.points:Flb.d 4</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 8</to><from>foreignLanguagesBuilding.wi:Flb.wi 7</from></line>
+<line><to>noyesLaboratory.wi:Ny.wi 4</to><from>harkerHall.wi:Hh.wi 4</from></line>
+<line><to>quad.wi:quad.wi 1</to><from>harkerHall.wi:Hh.wi 4</from></line>
+<line><to>noyesLaboratory.wi:Ny.wi 1</to><from>quad.wi:quad.wi 1</from></line>
+<line><to>noyesLaboratory.wi:Ny.wi</to><from>noyesLaboratory.wi:Ny.wi 1</from></line>
+<line><to>noyesLaboratory.wi:Ny.wi 2</to><from>noyesLaboratory.wi:Ny.wi</from></line>
+<line><to>quad.wi:quad.wi 4</to><from>noyesLaboratory.wi:Ny.wi 2</from></line>
+<line><to>noyesLaboratory.wi:Ny.wi 3</to><from>quad.wi:quad.wi 4</from></line>
+<line><to>quad.wi:quad.wi 6</to><from>quad.wi:quad.wi 4</from></line>
+<line><to>davenportHall.wi:Dv.wi 8</to><from>quad.wi:quad.wi 6</from></line>
+<line><to>davenportHall.wi:Dv.wi 9</to><from>davenportHall.wi:Dv.wi 8</from></line>
+<line><to>davenportHall.wi:Dv.wi 10</to><from>davenportHall.wi:Dv.wi 9</from></line>
+<line><to>davenportHall.wi:Dv.wi 11</to><from>davenportHall.wi:Dv.wi 10</from></line>
+<line><to>davenportHall.wi:Dv.wi 7</to><from>davenportHall.wi:Dv.wi 8</from></line>
+<line><to>quad.wi:quad.wi 9</to><from>davenportHall.wi:Dv.wi 7</from></line>
+<line><to>davenportHall.wi:Dv.wi 6</to><from>quad.wi:quad.wi 9</from></line>
+<line><to>foreignLanguagesBuilding.wi:Flb.wi 10</to><from>davenportHall.wi:Dv.wi 6</from></line>
+<line><to>foreignLanguagesBuilding.wi:Flb.wi 9</to><from>foreignLanguagesBuilding.wi:Flb.wi 10</from></line>
+<line><to>davenportHall.wi:Dv.wi 2</to><from>davenportHall.wi:Dv.wi 1</from></line>
+<line><to>davenportHall.wi:Dv.wi 3</to><from>davenportHall.wi:Dv.wi 2</from></line>
+<line><to>davenportHall.wi:Dv.wi 4</to><from>davenportHall.wi:Dv.wi 3</from></line>
+<line><to>davenportHall.wi:Dv.wi 5</to><from>davenportHall.wi:Dv.wi 4</from></line>
+<line><to>chemistryAnnex.wi:Ca.wi</to><from>davenportHall.wi:Dv.wi 5</from></line>
+<line><to>quad.wi:quad.wi 12</to><from>foreignLanguagesBuilding.wi:Flb.wi 10</from></line>
+<line><to>foreignLanguagesBuilding.wi:Flb.wi 8</to><from>foreignLanguagesBuilding.wi:Flb.wi 10</from></line>
+<line><to>foreignLanguagesBuilding.wi:Flb.wi 4</to><from>foreignLanguagesBuilding.wi:Flb.wi 8</from></line>
+<line><to>foreignLanguagesBuilding.wi:Flb.wi 3</to><from>foreignLanguagesBuilding.wi:Flb.wi 4</from></line>
+<line><to>foreignLanguagesBuilding.wi:Flb.wi 5</to><from>foreignLanguagesBuilding.wi:Flb.wi 4</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 6</to><from>foreignLanguagesBuilding.wi:Flb.wi 5</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 7</to><from>smithMemorialHall.wi:Smh.wi 6</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 8</to><from>smithMemorialHall.wi:Smh.wi 7</from></line>
+<line><to>foreignLanguagesBuilding.wi:Flb.wi</to><from>smithMemorialHall.wi:Smh.wi 8</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 6</to><from>foreignLanguagesBuilding.wi:Flb.wi</from></line>
+<line><to>quad.wi:quad.wi 12</to><from>foellingerAuditorium.wi:Fol.wi 6</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 7</to><from>foellingerAuditorium.wi:Fol.wi 6</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 11</to><from>smithMemorialHall.wi:Smh.wi 12</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 10</to><from>smithMemorialHall.wi:Smh.wi 11</from></line>
+<line><to>gregoryHall.wi:Gh.wi 9</to><from>gregoryHall.wi:Gh.wi 8</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 26</to><from>gregoryHall.wi:Gh.wi 9</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 27</to><from>undergradLibrary.wi:Ugl.wi 26</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 28</to><from>undergradLibrary.wi:Ugl.wi 27</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 20</to><from>undergradLibrary.wi:Ugl.wi 21</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 19</to><from>undergradLibrary.wi:Ugl.wi 20</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 18</to><from>undergradLibrary.wi:Ugl.wi 19</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 16</to><from>undergradLibrary.wi:Ugl.wi 18</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 15</to><from>undergradLibrary.wi:Ugl.wi 16</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 14</to><from>undergradLibrary.wi:Ugl.wi 15</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 17</to><from>undergradLibrary.wi:Ugl.wi 14</from></line>
+<line><to>mainLibrary.wi:Ml.wi 6</to><from>undergradLibrary.wi:Ugl.wi 17</from></line>
+<line><to>mainLibrary.wi:Ml.wi 5</to><from>mainLibrary.wi:Ml.wi 6</from></line>
+<line><to>mainLibrary.wi:Ml.wi 3</to><from>mainLibrary.wi:Ml.wi 5</from></line>
+<line><to>mainLibrary.wi:Ml.wi 2</to><from>mainLibrary.wi:Ml.wi 3</from></line>
+<line><to>mainLibrary.wi:Ml.wi 1</to><from>mainLibrary.wi:Ml.wi 2</from></line>
+<line><to>gregoryHall.wi:Gh.wi 8</to><from>mainLibrary.wi:Ml.wi 1</from></line>
+<line><to>gregoryHall.wi:Gh.wi 7</to><from>gregoryHall.wi:Gh.wi 8</from></line>
+<line><to>mainLibrary.wi:Ml.wi</to><from>gregoryHall.wi:Gh.wi 7</from></line>
+<line><to>mainLibrary.wi:Ml.wi 1</to><from>mainLibrary.wi:Ml.wi</from></line>
+<line><to>gregoryHall.wi:Gh.wi 6</to><from>gregoryHall.wi:Gh.wi 7</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 24</to><from>undergradLibrary.wi:Ugl.wi 25</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 9</to><from>undergradLibrary.wi:Ugl.wi 24</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 23</to><from>undergradLibrary.wi:Ugl.wi 24</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 8</to><from>undergradLibrary.wi:Ugl.wi 23</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 26</to><from>undergradLibrary.wi:Ugl.wi 23</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 27</to><from>undergradLibrary.wi:Ugl.wi 25</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 1</to><from>undergradLibrary.points:Ugl.d 1</from></line>
+<line><to>mainLibrary.wi:Ml.wi 5</to><from>undergradLibrary.wi:Ugl.wi 1</from></line>
+<line><to>mainLibrary.wi:Ml.wi 3</to><from>undergradLibrary.points:Ugl.d 1</from></line>
+<line><to>mainLibrary.points:Ml.dh</to><from>mainLibrary.wi:Ml.wi 3</from></line>
+<line><to>mainLibrary.wi:Ml.wi 4</to><from>mainLibrary.wi:Ml.wi 26</from></line>
+<line><to>mainLibrary.wi:Ml.wi 3</to><from>mainLibrary.wi:Ml.wi 4</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 11</to><from>undergradLibrary.wi:Ugl.wi 14</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 3</to><from>undergradLibrary.wi:Ugl.wi 11</from></line>
+<line><to>undergradLibrary.points:Ugl.d</to><from>undergradLibrary.wi:Ugl.wi 3</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 2</to><from>undergradLibrary.points:Ugl.d</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 8</to><from>undergradLibrary.wi:Ugl.wi 2</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 9</to><from>undergradLibrary.wi:Ugl.wi 8</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 25</to><from>undergradLibrary.wi:Ugl.wi 10</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 10</to><from>undergradLibrary.wi:Ugl.wi 9</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 5</to><from>undergradLibrary.wi:Ugl.wi 4</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 13</to><from>undergradLibrary.wi:Ugl.wi 5</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 12</to><from>undergradLibrary.wi:Ugl.wi 13</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 11</to><from>undergradLibrary.wi:Ugl.wi 12</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 3</to><from>undergradLibrary.wi:Ugl.wi 5</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 7</to><from>undergradLibrary.wi:Ugl.wi 20</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 6</to><from>undergradLibrary.wi:Ugl.wi 7</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 21</to><from>undergradLibrary.wi:Ugl.wi 6</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 22</to><from>undergradLibrary.wi:Ugl.wi 21</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 29</to><from>undergradLibrary.wi:Ugl.wi 22</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 28</to><from>undergradLibrary.wi:Ugl.wi 29</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 22</to><from>undergradLibrary.wi:Ugl.wi 28</from></line>
+<line><to>quad.wi:quad.wi 10</to><from>quad.wi:quad.wi 11</from></line>
+<line><to>quad.wi:quad.wi 8</to><from>quad.wi:quad.wi 10</from></line>
+<line><to>quad.wi:quad.wi 20</to><from>quad.wi:quad.wi 11</from></line>
+<line><to>quad.wi:quad.wi 20</to><from>quad.wi:quad.wi 8</from></line>
+<line><to>quad.wi:quad.wi 13</to><from>quad.wi:quad.wi 20</from></line>
+<line><to>quad.wi:quad.wi 9</to><from>quad.wi:quad.wi 12</from></line>
+<line><to>quad.wi:quad.wi 8</to><from>quad.wi:quad.wi 9</from></line>
+<line><to>quad.wi:quad.wi 7</to><from>quad.wi:quad.wi 8</from></line>
+<line><to>quad.wi:quad.wi 19</to><from>quad.wi:quad.wi 7</from></line>
+<line><to>quad.wi:quad.wi 5</to><from>quad.wi:quad.wi 7</from></line>
+<line><to>quad.wi:quad.wi 5</to><from>quad.wi:quad.wi 19</from></line>
+<line><to>quad.wi:quad.wi 6</to><from>quad.wi:quad.wi 19</from></line>
+<line><to>quad.wi:quad.wi 9</to><from>quad.wi:quad.wi 19</from></line>
+<line><to>davenportHall.wi:Dv.wi 8</to><from>quad.wi:quad.wi 9</from></line>
+<line><to>quad.wi:quad.wi 9</to><from>quad.wi:quad.wi 20</from></line>
+<line><to>smithMemorialHall.points:Smh.bi 1</to><from>undergradLibrary.wi:Ugl.wi 29</from></line>
+<line><to>foellingerAuditorium.wi:Fol.wi 11</to><from>smithMemorialHall.points:Smh.bi 1</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 9</to><from>smithMemorialHall.wi:Smh.wi 10</from></line>
+<line><to>smithMemorialHall.points:Smh.s</to><from>smithMemorialHall.wi:Smh.wi 9</from></line>
+<line><to>smithMemorialHall.points:Smh.d</to><from>smithMemorialHall.wi:Smh.wi 9</from></line>
+<line><to>smithMemorialHall.points:Smh.d</to><from>smithMemorialHall.points:Smh.s</from></line>
+<line><to>smithMemorialHall.points:Smh.doh</to><from>smithMemorialHall.points:Smh.s</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 8</to><from>smithMemorialHall.wi:Smh.wi 9</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 12</to><from>foreignLanguagesBuilding.wi:Flb.wi</from></line>
+<line><to>smithMemorialHall.points:Smh.d 2</to><from>smithMemorialHall.wi:Smh.wi 6</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 4</to><from>smithMemorialHall.wi:Smh.wi 5</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 3</to><from>smithMemorialHall.wi:Smh.wi 5</from></line>
+<line><to>smithMemorialHall.points:Smh.dh</to><from>smithMemorialHall.wi:Smh.wi 3</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 2</to><from>smithMemorialHall.wi:Smh.wi 3</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 2</to><from>smithMemorialHall.wi:Smh.wi 4</from></line>
+<line><to>almaMater.wi:alma.wi 2</to><from>naturalHistoryBuilding.wi:Nhb.wi 1</from></line>
+<line><to>mainLibrary.wi:Ml.wi 22</to><from>gregoryHall.wi:Gh.wi 6</from></line>
+<line><to>mainLibrary.wi:Ml.wi 23</to><from>gregoryHall.wi:Gh.wi 6</from></line>
+<line><to>mainLibrary.wi:Ml.wi 23</to><from>mainLibrary.wi:Ml.wi 22</from></line>
+<line><to>mainLibrary.wi:Ml.wi 24</to><from>mainLibrary.wi:Ml.wi 23</from></line>
+<line><to>mainLibrary.wi:Ml.wi 25</to><from>mainLibrary.wi:Ml.wi 24</from></line>
+<line><to>mainLibrary.points:Ml.d</to><from>mainLibrary.wi:Ml.wi 25</from></line>
+<line><to>mainLibrary.points:Ml.d 1</to><from>mainLibrary.points:Ml.d</from></line>
+<line><to>mainLibrary.wi:Ml.wi 20</to><from>mainLibrary.wi:Ml.wi 22</from></line>
+<line><to>mainLibrary.wi:Ml.wi 21</to><from>mainLibrary.wi:Ml.wi 20</from></line>
+<line><to>mainLibrary.wi:Ml.wi 17</to><from>mainLibrary.wi:Ml.wi 21</from></line>
+<line><to>mainLibrary.wi:Ml.wi 19</to><from>mainLibrary.wi:Ml.wi 17</from></line>
+<line><to>mainLibrary.wi:Ml.wi 20</to><from>mainLibrary.wi:Ml.wi 19</from></line>
+<line><to>mainLibrary.wi:Ml.wi 18</to><from>mainLibrary.wi:Ml.wi 19</from></line>
+<line><to>mainLibrary.wi:Ml.wi 16</to><from>mainLibrary.wi:Ml.wi 17</from></line>
+<line><to>mainLibrary.points:Ml.dh 1</to><from>mainLibrary.wi:Ml.wi 16</from></line>
+<line><to>mainLibrary.wi:Ml.wi 15</to><from>mainLibrary.wi:Ml.wi 16</from></line>
+<line><to>mainLibrary.wi:Ml.wi 14</to><from>mainLibrary.wi:Ml.wi 15</from></line>
+<line><to>mainLibrary.wi:Ml.wi 13</to><from>mainLibrary.wi:Ml.wi 14</from></line>
+<line><to>mainLibrary.wi:Ml.wi 18</to><from>mainLibrary.wi:Ml.wi 13</from></line>
+<line><to>mainLibrary.wi:Ml.wi 12</to><from>mainLibrary.wi:Ml.wi 13</from></line>
+<line><to>mainLibrary.wi:Ml.wi 9</to><from>mainLibrary.wi:Ml.wi 12</from></line>
+<line><to>mainLibrary.wi:Ml.wi 10</to><from>mainLibrary.wi:Ml.wi 9</from></line>
+<line><to>mainLibrary.wi:Ml.wi 10</to><from>mainLibrary.wi:Ml.wi 11</from></line>
+<line><to>mainLibrary.wi:Ml.wi 8</to><from>mainLibrary.wi:Ml.wi 9</from></line>
+<line><to>mainLibrary.points:Ml.d 2</to><from>mainLibrary.wi:Ml.wi 8</from></line>
+<line><to>mainLibrary.wi:Ml.wi 7</to><from>mainLibrary.wi:Ml.wi 8</from></line>
+<line><to>mainLibrary.wi:Ml.wi 5</to><from>mainLibrary.wi:Ml.wi 7</from></line>
+<line><to>mainLibrary.wi:Ml.wi 6</to><from>mainLibrary.wi:Ml.wi 7</from></line>
+<line><to>altgeldHall.points:Ah.d 1</to><from>Building.centres:Ah.c</from></line>
+<line><to>altgeldHall.points:Ah.dh</to><from>Building.centres:Ah.c</from></line>
+<line><to>altgeldHall.points:Ah.d</to><from>Building.centres:Ah.c</from></line>
+<line><to>altgeldHall.points:Ah.d 2</to><from>Building.centres:Ah.c</from></line>
+<line><to>union.points:U.d 5</to><from>Building.centres:U.c</from></line>
+<line><to>union.points:U.dh 3</to><from>Building.centres:U.c</from></line>
+<line><to>union.points:U.d 3</to><from>Building.centres:U.c</from></line>
+<line><to>union.points:U.dh 1</to><from>Building.centres:U.c</from></line>
+<line><to>union.points:U.d</to><from>Building.centres:U.c</from></line>
+<line><to>union.points:U.dh</to><from>Building.centres:U.c</from></line>
+<line><to>harkerHall.points:Hh.dh</to><from>Building.centres:Hh.c</from></line>
+<line><to>harkerHall.points:Hh.d</to><from>Building.centres:Hh.c</from></line>
+<line><to>harkerHall.points:Hh.d 2</to><from>Building.centres:Hh.c</from></line>
+<line><to>naturalHistoryBuilding.points:Nhb.d</to><from>Building.centres:Nhb.c</from></line>
+<line><to>naturalHistoryBuilding.points:Nhb.d 2</to><from>Building.centres:Nhb.c</from></line>
+<line><to>naturalHistoryBuilding.points:Nhb.d 1</to><from>Building.centres:Nhb.c</from></line>
+<line><to>Building.centres:Ny.c</to><from>noyesLaboratory.points:Ny.d 3</from></line>
+<line><to>Building.centres:Ny.c</to><from>noyesLaboratory.points:Ny.dh</from></line>
+<line><to>Building.centres:Ny.c</to><from>noyesLaboratory.points:Ny.d 2</from></line>
+<line><to>Building.centres:Ny.c</to><from>noyesLaboratory.points:Ny.d 1</from></line>
+<line><to>Building.centres:Ny.c</to><from>noyesLaboratory.points:Ny.d</from></line>
+<line><to>Building.centres:Ny.c</to><from>noyesLaboratory.points:Ny.d 4</from></line>
+<line><to>Building.centres:Ca.c</to><from>chemistryAnnex.points:Ca.doh</from></line>
+<line><to>Building.centres:Ca.c</to><from>chemistryAnnex.points:Ca.d1</from></line>
+<line><to>Building.centres:Ca.c</to><from>davenportHall.points:Dv.d 31</from></line>
+<line><to>Building.centres:Ca.c</to><from>davenportHall.points:Dv.d 21</from></line>
+<line><to>Building.centres:Ca.c</to><from>chemistryAnnex.points:Ca.dh1</from></line>
+<line><to>Building.centres:Dv.c</to><from>davenportHall.points:Dv.d 11</from></line>
+<line><to>Building.centres:Dv.c</to><from>davenportHall.points:Dv.d1</from></line>
+<line><to>davenportHall.points:Dv.d1</to><from>davenportHall.wi:Dv.wi 7</from></line>
+<line><to>davenportHall.points:Dv.d 61</to><from>Building.centres:Dv.c</from></line>
+<line><to>Building.centres:Dv.c</to><from>davenportHall.points:Dv.d 51</from></line>
+<line><to>Building.centres:Dv.c</to><from>davenportHall.points:Dv.dh1</from></line>
+<line><to>Building.centres:Hh.c</to><from>harkerHall.points:Hh.d 1</from></line>
+<line><to>davenportHall.points:Dv.d 41</to><from>Building.centres:Dv.c</from></line>
+<line><to>Building.centres:Flb.c</to><from>foreignLanguagesBuilding.points:Flb.d</from></line>
+<line><to>Building.centres:Flb.c</to><from>foreignLanguagesBuilding.points:Flb.d 1</from></line>
+<line><to>Building.centres:Flb.c</to><from>foreignLanguagesBuilding.points:Flb.d 2</from></line>
+<line><to>Building.centres:Flb.c</to><from>foreignLanguagesBuilding.points:Flb.d 3</from></line>
+<line><to>foreignLanguagesBuilding.points:Flb.d</to><from>foreignLanguagesBuilding.wi:Flb.wi 3</from></line>
+<line><to>foreignLanguagesBuilding.points:Flb.d 1</to><from>foreignLanguagesBuilding.wi:Flb.wi 3</from></line>
+<line><to>Building.centres:Sh.c</to><from>smithMemorialHall.points:Smh.d</from></line>
+<line><to>Building.centres:Sh.c</to><from>smithMemorialHall.points:Smh.d 1</from></line>
+<line><to>Building.centres:Sh.c</to><from>smithMemorialHall.points:Smh.d 2</from></line>
+<line><to>Building.centres:Sh.c</to><from>smithMemorialHall.points:Smh.dh</from></line>
+<line><to>Building.centres:Sh.c</to><from>smithMemorialHall.points:Smh.dc</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 5</to><from>smithMemorialHall.points:Smh.d 2</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi</to><from>smithMemorialHall.wi:Smh.wi 2</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 29</to><from>smithMemorialHall.wi:Smh.wi</from></line>
+<line><to>smithMemorialHall.points:Smh.bi</to><from>smithMemorialHall.wi:Smh.wi</from></line>
+<line><to>smithMemorialHall.wi:Smh.wi 1</to><from>smithMemorialHall.points:Smh.bi</from></line>
+<line><to>smithMemorialHall.points:Smh.dc</to><from>smithMemorialHall.wi:Smh.wi 1</from></line>
+<line><to>undergradLibrary.points:Ugl.d</to><from>Building.centres:Ugl.c</from></line>
+<line><to>undergradLibrary.points:Ugl.d 1</to><from>Building.centres:Ugl.c</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 3</to><from>undergradLibrary.wi:Ugl.wi 1</from></line>
+<line><to>mainLibrary.wi:Ml.wi 3</to><from>undergradLibrary.wi:Ugl.wi 1</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 15</to><from>undergradLibrary.wi:Ugl.wi 12</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 16</to><from>undergradLibrary.wi:Ugl.wi 13</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 10</to><from>undergradLibrary.wi:Ugl.wi 4</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 2</to><from>undergradLibrary.wi:Ugl.wi 4</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 6</to><from>undergradLibrary.wi:Ugl.wi 4</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 7</to><from>undergradLibrary.wi:Ugl.wi 5</from></line>
+<line><to>undergradLibrary.wi:Ugl.wi 18</to><from>undergradLibrary.wi:Ugl.wi 17</from></line>
+<line><to>Building.centres:Ml.c</to><from>mainLibrary.points:Ml.dh</from></line>
+<line><to>Building.centres:Ml.c</to><from>mainLibrary.points:Ml.d 2</from></line>
+<line><to>Building.centres:Ml.c</to><from>mainLibrary.points:Ml.d</from></line>
+<line><to>Building.centres:Ml.c</to><from>mainLibrary.points:Ml.dh 1</from></line>
+<line><to>gregoryHall.points:Gh.d 1</to><from>Building.centres:Gh.c</from></line>
+<line><to>gregoryHall.points:Gh.d</to><from>Building.centres:Gh.c</from></line>
+<line><to>Building.centres:Gh.c</to><from>gregoryHall.points:Gh.d 2</from></line>
+<line><to>Building.centres:Gh.c</to><from>gregoryHall.points:Gh.dh</from></line>
+<line><to>Building.centres:Gh.c</to><from>gregoryHall.points:Gh.d.settle</from></line>
+<line><to>Building.centres:Fol.c</to><from>foellingerAuditorium.points:Fol.dh</from></line>
+<line><to>Building.centres:Fol.c</to><from>foellingerAuditorium.points:Fol.d</from></line>
+<line><to>Building.centres:Fol.c</to><from>foellingerAuditorium.points:Fol.d 2</from></line>
+<line><to>Building.centres:Eb.c</to><from>englishBuilding.points:Eb.d</from></line>
+<line><to>Building.centres:Eb.c</to><from>englishBuilding.points:Eb.dh</from></line>
+<line><to>Building.centres:Eb.c</to><from>englishBuilding.points:Eb.d 1</from></line>
+<line><to>Building.centres:Gh.c</to><from>gregoryHall.points:Gh.d 3</from></line>
+<line><to>Building.centres:Hab.c</to><from>henryAdministrationBuilding.points:Hab.dh</from></line>
+<line><to>Building.centres:Hab.c</to><from>henryAdministrationBuilding.points:Hab.d 1</from></line>
+<line><to>Building.centres:Hab.c</to><from>henryAdministrationBuilding.points:Hab.d</from></line>
+<line><to>Building.centres:Hab.c</to><from>henryAdministrationBuilding.points:Hab.d 4</from></line>
+<line><to>Building.centres:Hab.c</to><from>henryAdministrationBuilding.points:Hab.d 3</from></line>
+<line><to>Building.centres:Hab.c</to><from>henryAdministrationBuilding.points:Hab.d 2</from></line>
+<line><to>foreignLanguagesBuilding.wi:Flb.wi 9</to><from>davenportHall.points:Dv.d 51</from></line>
+<line><to>foreignLanguagesBuilding.wi:Flb.wi 5</to><from>foreignLanguagesBuilding.wi:Flb.wi 6</from></line>
+<line><to>foreignLanguagesBuilding.points:Flb.d 3</to><from>foreignLanguagesBuilding.wi:Flb.wi 6</from></line>
+<line><to>foreignLanguagesBuilding.points:Flb.s</to><from>foreignLanguagesBuilding.points:Flb.d 3</from></line>
+<line><to>foreignLanguagesBuilding.wi:Flb.wi 4</to><from>foreignLanguagesBuilding.points:Flb.s</from></line>
+<line><to>foreignLanguagesBuilding.wi:Flb.wi 3</to><from>foreignLanguagesBuilding.points:Flb.s</from></line>
+<line><to>chemistryAnnex.points:Ca.d1</to><from>noyesLaboratory.points:Ny.d 1</from></line>
+<line><to>chemistryAnnex.points:Ca.d1</to><from>noyesLaboratory.points:Ny.d</from></line>
+<line><to>chemistryAnnex.points:Ca.doh</to><from>noyesLaboratory.points:Ny.d</from></line>
+<line><to>chemistryAnnex.points:Ca.doh</to><from>noyesLaboratory.points:Ny.d 1</from></line>
+<line><to>chemistryAnnex.points:Ca.doh</to><from>noyesLaboratory.wi:Ny.wi 3</from></line>
+<line><to>chemistryAnnex.points:Ca.d1</to><from>noyesLaboratory.wi:Ny.wi 3</from></line>
+<line><to>union.points:U.d 4</to><from>Building.centres:U.c</from></line>
+<line><to>union.points:U.d 7</to><from>Building.centres:U.c</from></line>
+<line><to>gregoryHall.wi:Gh.wi 9</to><from>mainLibrary.wi:Ml.wi 1</from></line>
+<line><to>gregoryHall.wi:Gh.wi 9</to><from>foellingerAuditorium.wi:Fol.wi</from></line>
+    <line><to>Sixpack:7</to><from>BIF,Huff,Art:50</from></line>
+    <line><to>Sixpack:6</to><from>Sixpack:7</from></line>
+    <line><to>Sixpack:124</to><from>Sixpack:6</from></line>
+    <line><to>Sixpack:125</to><from>Sixpack:124</from></line>
+    <line><to>Sixpack:126d</to><from>Sixpack:125</from></line>
+    <line><to>Sixpack:122</to><from>Sixpack:124</from></line>
+    <line><to>Sixpack:123d</to><from>Sixpack:122</from></line>
+    <line><to>Sixpack:116</to><from>Sixpack:122</from></line>
+    <line><to>Sixpack:115</to><from>Sixpack:116</from></line>
+    <line><to>Sixpack:114d</to><from>Sixpack:115</from></line>
+    <line><to>Sixpack:117</to><from>Sixpack:116</from></line>
+    <line><to>Sixpack:118</to><from>Sixpack:117</from></line>
+    <line><to>Sixpack:119dh</to><from>Sixpack:118</from></line>
+    <line><to>Sixpack:121</to><from>Sixpack:118</from></line>
+    <line><to>Sixpack:120d</to><from>Sixpack:121</from></line>
+    <line><to>Sixpack:2</to><from>BIF,Huff,Art:27</from></line>
+    <line><to>Sixpack:3</to><from>Sixpack:2</from></line>
+    <line><to>Sixpack:4</to><from>Sixpack:3</from></line>
+    <line><to>Sixpack:5</to><from>Sixpack:4</from></line>
+    <line><to>Sixpack:19</to><from>Sixpack:5</from></line>
+    <line><to>Sixpack:20</to><from>Sixpack:19</from></line>
+    <line><to>Sixpack:6</to><from>Sixpack:20</from></line>
+    <line><to>Sixpack:6</to><from>Sixpack:5</from></line>
+    <line><to>Sixpack:18</to><from>Sixpack:4</from></line>
+    <line><to>Sixpack:17</to><from>Sixpack:18</from></line>
+    <line><to>Sixpack:16</to><from>Sixpack:17</from></line>
+    <line><to>Sixpack:15</to><from>Sixpack:16</from></line>
+    <line><to>Sixpack:14</to><from>Sixpack:15</from></line>
+    <line><to>Sixpack:13</to><from>Sixpack:14</from></line>
+    <line><to>Sixpack:25</to><from>Sixpack:14</from></line>
+    <line><to>Sixpack:26</to><from>Sixpack:25</from></line>
+    <line><to>Sixpack:27</to><from>Sixpack:26</from></line>
+    <line><to>Sixpack:69</to><from>Sixpack:27</from></line>
+    <line><to>Sixpack:28</to><from>Sixpack:69</from></line>
+    <line><to>Sixpack:29</to><from>Sixpack:28</from></line>
+    <line><to>Sixpack:41</to><from>Sixpack:29</from></line>
+    <line><to>Sixpack:28</to><from>Sixpack:41</from></line>
+    <line><to>Sixpack:42</to><from>Sixpack:41</from></line>
+    <line><to>Sixpack:28</to><from>Sixpack:42</from></line>
+    <line><to>Sixpack:24dh</to><from>Sixpack:19</from></line>
+    <line><to>Sixpack:22</to><from>Sixpack:24dh</from></line>
+    <line><to>Sixpack:21d</to><from>Sixpack:22</from></line>
+    <line><to>Sixpack:10</to><from>Sixpack:21d</from></line>
+    <line><to>Sixpack:23dh</to><from>Sixpack:22</from></line>
+    <line><to>Sixpack:11</to><from>Sixpack:23dh</from></line>
+    <line><to>Sixpack:94</to><from>Sixpack:11</from></line>
+    <line><to>Sixpack:9</to><from>Sixpack:11</from></line>
+    <line><to>Sixpack:20</to><from>Sixpack:9</from></line>
+    <line><to>Sixpack:8</to><from>Sixpack:9</from></line>
+    <line><to>Sixpack:95</to><from>Sixpack:94</from></line>
+    <line><to>Sixpack:8</to><from>Sixpack:95</from></line>
+    <line><to>Sixpack:7</to><from>Sixpack:8</from></line>
+    <line><to>Sixpack:96</to><from>Sixpack:95</from></line>
+    <line><to>Sixpack:97</to><from>Sixpack:96</from></line>
+    <line><to>Sixpack:88</to><from>Sixpack:97</from></line>
+    <line><to>Sixpack:110</to><from>Sixpack:87</from></line>
+    <line><to>Sixpack:111</to><from>Sixpack:110</from></line>
+    <line><to>Sixpack:112</to><from>Sixpack:111</from></line>
+    <line><to>Sixpack:109</to><from>Sixpack:111</from></line>
+    <line><to>Sixpack:106</to><from>Sixpack:109</from></line>
+    <line><to>Sixpack:108</to><from>Sixpack:106</from></line>
+    <line><to>Sixpack:107</to><from>Sixpack:108</from></line>
+    <line><to>Sixpack:103</to><from>Sixpack:107</from></line>
+    <line><to>Sixpack:104</to><from>Sixpack:107</from></line>
+    <line><to>Sixpack:105dh</to><from>Sixpack:104</from></line>
+    <line><to>Sixpack:96</to><from>Sixpack:103</from></line>
+    <line><to>Sixpack:102dh</to><from>Sixpack:11</from></line>
+    <line><to>Sixpack:99</to><from>Sixpack:102dh</from></line>
+    <line><to>Sixpack:101dh</to><from>Sixpack:99</from></line>
+    <line><to>Sixpack:86</to><from>Sixpack:101dh</from></line>
+    <line><to>Sixpack:100d</to><from>Sixpack:99</from></line>
+    <line><to>Sixpack:98</to><from>Sixpack:100d</from></line>
+    <line><to>Sixpack:85</to><from>Sixpack:86</from></line>
+    <line><to>Sixpack:87</to><from>Sixpack:86</from></line>
+    <line><to>Sixpack:11</to><from>Sixpack:12</from></line>
+    <line><to>Sixpack:12</to><from>Sixpack:13</from></line>
+    <line><to>Sixpack:26</to><from>Sixpack:12</from></line>
+    <line><to>Sixpack:82</to><from>Sixpack:26</from></line>
+    <line><to>Sixpack:27</to><from>Sixpack:82</from></line>
+    <line><to>Sixpack:68</to><from>Sixpack:82</from></line>
+    <line><to>Sixpack:67</to><from>Sixpack:68</from></line>
+    <line><to>Sixpack:66</to><from>Sixpack:67</from></line>
+    <line><to>Sixpack:71</to><from>Sixpack:67</from></line>
+    <line><to>Sixpack:70</to><from>Sixpack:71</from></line>
+    <line><to>Sixpack:68</to><from>Sixpack:70</from></line>
+    <line><to>Sixpack:83</to><from>Sixpack:82</from></line>
+    <line><to>Sixpack:84</to><from>Sixpack:83</from></line>
+    <line><to>Sixpack:93dh</to><from>Sixpack:84</from></line>
+    <line><to>Sixpack:91</to><from>Sixpack:93dh</from></line>
+    <line><to>Sixpack:92d</to><from>Sixpack:91</from></line>
+    <line><to>Sixpack:90dh</to><from>Sixpack:91</from></line>
+    <line><to>Sixpack:85</to><from>Sixpack:84</from></line>
+    <line><to>Sixpack:89</to><from>Sixpack:90dh</from></line>
+    <line><to>Sixpack:88</to><from>Sixpack:89</from></line>
+    <line><to>Sixpack:73</to><from>Sixpack:89</from></line>
+    <line><to>Sixpack:72</to><from>Sixpack:73</from></line>
+    <line><to>Sixpack:70</to><from>Sixpack:72</from></line>
+    <line><to>Sixpack:83</to><from>Sixpack:85</from></line>
+    <line><to>Sixpack:81</to><from>Sixpack:71</from></line>
+    <line><to>Sixpack:80dh</to><from>Sixpack:81</from></line>
+    <line><to>Sixpack:77</to><from>Sixpack:80dh</from></line>
+    <line><to>Sixpack:79d</to><from>Sixpack:77</from></line>
+    <line><to>Sixpack:78dh</to><from>Sixpack:77</from></line>
+    <line><to>Sixpack:75</to><from>Sixpack:78dh</from></line>
+    <line><to>Sixpack:74</to><from>Sixpack:75</from></line>
+    <line><to>Sixpack:73</to><from>Sixpack:74</from></line>
+    <line><to>Sixpack:76</to><from>Sixpack:74</from></line>
+    <line><to>Sixpack:46</to><from>Sixpack:76</from></line>
+    <line><to>Sixpack:61d</to><from>Sixpack:46</from></line>
+    <line><to>Sixpack:47</to><from>Sixpack:46</from></line>
+    <line><to>Sixpack:62dh</to><from>Sixpack:47</from></line>
+    <line><to>Sixpack:43</to><from>Sixpack:42</from></line>
+    <line><to>Sixpack:58dh</to><from>Sixpack:43</from></line>
+    <line><to>Sixpack:44</to><from>Sixpack:43</from></line>
+    <line><to>Sixpack:30</to><from>Sixpack:29</from></line>
+    <line><to>Sixpack:36d</to><from>Sixpack:30</from></line>
+    <line><to>Sixpack:35</to><from>Sixpack:36d</from></line>
+    <line><to>Sixpack:37dh</to><from>Sixpack:35</from></line>
+    <line><to>Sixpack:69</to><from>Sixpack:37dh</from></line>
+    <line><to>Sixpack:38dh</to><from>Sixpack:35</from></line>
+    <line><to>Sixpack:34</to><from>Sixpack:38dh</from></line>
+    <line><to>Sixpack:2</to><from>Sixpack:34</from></line>
+    <line><to>Sixpack:33</to><from>Sixpack:2</from></line>
+    <line><to>Sixpack:32</to><from>Sixpack:33</from></line>
+    <line><to>Sixpack:34</to><from>Sixpack:32</from></line>
+    <line><to>Sixpack:31</to><from>Sixpack:32</from></line>
+    <line><to>Sixpack:30</to><from>Sixpack:31</from></line>
+    <line><to>Sixpack:40</to><from>Sixpack:31</from></line>
+    <line><to>Sixpack:57dh</to><from>Sixpack:40</from></line>
+    <line><to>Sixpack:39</to><from>Sixpack:57dh</from></line>
+    <line><to>Sixpack:32</to><from>Sixpack:39</from></line>
+    <line><to>Sixpack:1</to><from>Sixpack:2</from></line>
+    <line><to>Sixpack:52</to><from>Sixpack:1</from></line>
+    <line><to>Sixpack:53</to><from>Sixpack:52</from></line>
+    <line><to>Sixpack:56</to><from>Sixpack:53</from></line>
+    <line><to>Sixpack:55</to><from>Sixpack:56</from></line>
+    <line><to>Sixpack:54</to><from>Sixpack:55</from></line>
+    <line><to>Sixpack:52</to><from>Sixpack:54</from></line>
+    <line><to>Sixpack:54</to><from>Sixpack:50</from></line>
+    <line><to>Sixpack:51</to><from>Sixpack:50</from></line>
+    <line><to>Sixpack:55</to><from>Sixpack:51</from></line>
+    <line><to>Sixpack:48</to><from>Sixpack:50</from></line>
+    <line><to>Sixpack:63dh</to><from>Sixpack:48</from></line>
+    <line><to>Sixpack:49</to><from>Sixpack:48</from></line>
+    <line><to>Armory:12</to><from>Sixpack:49</from></line>
+    <line><to>BIF,Huff,Art:30</to><from>Sixpack:51</from></line>
+    <line><to>Sixpack:47</to><from>Sixpack:48</from></line>
+    <line><to>mainLibrary.wi:Ml.wi 18</to><from>Armory:5</from></line>
+    <line><to>mainLibrary.wi:Ml.wi 12</to><from>Armory:8</from></line>
+    <line><to>Beckman Quad East:Wh:wi5</to><from>mainLibrary.wi:Ml.wi 12</from></line>
+    <line><to>Beckman Quad East:Wh:wi5</to><from>mainLibrary.wi:Ml.wi 12</from></line>
+
+</doc>

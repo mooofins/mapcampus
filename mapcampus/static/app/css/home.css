@@ -1,0 +1,24 @@
+html,
+body {
+  height: 100%;
+}
+
+#map_canvas {
+  height: 100%;
+  width: 100%;
+}
+
+#center {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+#entry-container {
+  display: inline-block;
+  left: 85px;
+  position: absolute;
+  top: 10px;
+  vertical-align: middle;
+  z-index: 50;
+}

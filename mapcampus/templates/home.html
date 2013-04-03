@@ -7,7 +7,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    {% include "styles.html" %}
+    {% include "partial/styles.html" %}
+    <link href="{{ STATIC_URL }}app/css/home.css" rel="stylesheet">
+
+    {% include "partial/head_scripts.html" %}
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -16,27 +19,31 @@
   </head>
 
   <body ng-controller="MapCtrl">
-    {% include "navbar.html" with home_item_class="active" %}
+    {% include "partial/navbar.html" with home_item_class="active" %}
 
     <div id="center">
-      <form id="entry" class="form-horizontal pull-left well">
-        <span class="input-prepend">
-          <span class="add-on">From</span>
-          <input id="from-input" type="text" class="span2" autocomplete="off" ng-model="from" building-typeahead>
-        </span>
-        <span class="input-prepend">
-          <span class="add-on">To</span>
-          <input id="to-input" type="text" class="span2" autocomplete="off" ng-model="to" building-typeahead>
-        </span>
-        <button type="submit" class="btn btn-primary" ng-click="search(from, to)">Go &raquo;</button>
-      </form>
+      <div id="entry-container"> 
+        <form id="entry" class="form-horizontal pull-left well">
+          <span class="input-prepend">
+            <span class="add-on">From</span>
+            <input id="from-input" type="text" class="span2" autocomplete="off" ng-model="from" building-ta>
+          </span>
+          <span class="input-prepend">
+            <span class="add-on">To</span>
+            <input id="to-input" type="text" class="span2" autocomplete="off" ng-model="to" building-ta>
+          </span>
+          <button type="submit" class="btn btn-primary" ng-click="search(from, to)">Go &raquo;</button>
+        </form>
+      </div>
 
       <div id="map_canvas"/>
     </div>
 
-    {% include "map_scripts.html" %}
-    <script src="{{ STATIC_URL }}js/common/services.js"></script>
-    <script src="{{ STATIC_URL }}js/common/app.js"></script>
-    <script src="{{ STATIC_URL }}js/home/controllers.js"></script>
+    {% include "partial/map_scripts.html" %}
+    <script src="{{ STATIC_URL }}app/js/common/models.js"></script>
+    <script src="{{ STATIC_URL }}app/js/common/services.js"></script>
+    <script src="{{ STATIC_URL }}app/js/common/app.js"></script>
+    <script src="{{ STATIC_URL }}app/js/home/directives.js"></script>
+    <script src="{{ STATIC_URL }}app/js/home/controllers.js"></script>
   </body>
 </html>

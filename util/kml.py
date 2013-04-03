@@ -6,7 +6,7 @@ import argparse
 
 os.environ['DJANGO_SETTINGS_MODULE'] = "mapcampus.settings"
 
-from django.contrib.gis.geos import Point
+from django.contrib.gis.geos import Point, LineString
 from lxml import etree
 
 from apps.map.models import Node, Edge, Building
@@ -25,27 +25,29 @@ def parse_lines(fe):
   return edges
 
 def parse_nodes(fn, ns):
-  buildings = []
+  buildings = {}
   nodes = {}
 
   root = etree.parse(fn)
   folders = root.xpath("//kml:Folder[kml:Placemark]", namespaces=ns)
   for folder in folders:
-    building_name = folder.xpath("./kml:name", namespaces=ns)[0].text
+    folder_name = folder.xpath("./kml:name", namespaces=ns)[0].text
     placemarks = folder.xpath("./kml:Placemark", namespaces=ns)
 
-    building = Building(name=building_name)
-    buildings.append(building)
-
     for placemark in placemarks:
-      node_name = placemark.xpath("./kml:name", namespaces=ns)[0].text
+      placemark_name = placemark.xpath("./kml:name", namespaces=ns)[0].text
+     
       coordinates = placemark.xpath(".//kml:coordinates", namespaces=ns)[0].text
-      frags = coordinates.split(',')
-      
+      frags = coordinates.split(',') 
       lat, lng = frags[1], frags[0]
 
-      nodes["{0}:{1}".format(building_name, node_name)] = \
-        Node(coordinates=Point(x=float(lng), y=float(lat)), building=building)
+      node = Node(coordinates=Point(x=float(lng), y=float(lat)))
+      uid = "{0}:{1}".format(folder_name, placemark_name)
+
+      if folder_name == "Building.centres":
+        buildings[uid] = Building(name=placemark_name)
+  
+      nodes[uid] = node
 
   return buildings, nodes
 
@@ -56,26 +58,33 @@ def main():
     buildings, nodes = parse_nodes(fn, ns)
     edges = parse_lines(fe)
 
-  for building in buildings:
-    building.save()
+  for uid in nodes:
+    node = nodes[uid]
+    try:
+      nodes[uid] = Node.objects.get(coordinates=node.coordinates)
+    except Node.DoesNotExist:
+      node.save()
+      nodes[uid] = node
 
-  for name in nodes:
-    node = nodes[name]
-    
-    # get saved building
-    saved_building = Building.objects.get(name=node.building.name)
-    node.building = saved_building
-
-    nodes[name].save()
-
-    # update node in dictionary
-    nodes[name] = node
+    if uid in buildings:
+      building = buildings[uid]
+      building.centroid = node
+      try:
+        Building.objects.get(name=building.name)
+      except Building.DoesNotExist:
+        building.save()
 
   for (src, sink) in edges:
-    node_src = nodes[src]
-    node_sink = nodes[sink]
-    edge = Edge(node_src=node_src, node_sink=node_sink, line=LineString(node_src.coordinates, node_sink.coordinates))
-    edge.undirected_save()         
+    node_src, node_sink = nodes[src], nodes[sink]
+    if node_src.id > node_sink.id:
+      node_src, node_sink = node_sink, node_src
+
+    line = LineString(node_src.coordinates, node_sink.coordinates)
+    edge = Edge(node_src=node_src, node_sink=node_sink, line=line)
+    try:
+      Edge.objects.get(node_src=node_src, node_sink=node_sink)
+    except Edge.DoesNotExist:
+      edge.save()       
 
   return 0
 

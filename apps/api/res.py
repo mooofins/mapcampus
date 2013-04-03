@@ -1,6 +1,7 @@
 import networkx as nx
 
 from tastypie import fields
+from tastypie.cache import SimpleCache
 from tastypie.resources import Resource
 from tastypie.contrib.gis.resources import ModelResource
 
@@ -21,39 +22,37 @@ class BuildingResource(ModelResource):
   class Meta:
     queryset = Building.objects.all()
     resource_name = 'building'
+    max_limit = 10000
+
+  def dehydrate(self, bundle): 
+    bundle = super(BuildingResource, self).dehydrate(bundle) 
+    bundle.data['centroid_id'] = bundle.obj.centroid_id
+    return bundle 
 
 class NodeResource(ModelResource):
   class Meta:
+    queryset = Node.objects.all()
     resource_name = 'node'
-    allowed_methods = ['get']
-    object_class = Node
-    #authentication = DjangoAuthentication()
-    #filtering = { "pk": ['in', 'exact'], }
-
-  def obj_get_list(self, bundle, **kwargs):
-    lz = LazyGraph()
-    return lz.get_node_dict().values()
+    #cache = SimpleCache(timeout=10)
+    max_limit = 10000
 
 class EdgeResource(ModelResource):
-  node_src = fields.ToOneField(NodeResource, 'node_src', full=True)
-  node_sink = fields.ToOneField(NodeResource, 'node_sink', full=True)
-  
   class Meta:
+    queryset = Edge.objects.all()
     resource_name = 'edge'
-    allowed_methods = ['get']
-    object_class = Edge
-    #authentication = DjangoAuthentication()
-    #filtering = { "pk": ['in', 'exact'], }
+    #cache = SimpleCache(timeout=10)
+    max_limit = 10000
 
-  def obj_get_list(self, bundle, **kwargs):
-    lz = LazyGraph()
-    nd = lz.get_node_dict()
-    edges = [edge for edge in Edge.objects.all()]
-    for edge in edges:
-      edge.node_src = nd[edge.node_src_id]
-      edge.node_sink = nd[edge.node_sink_id]
-    
-    return edges
+  def dehydrate(self, bundle): 
+    bundle = super(EdgeResource, self).dehydrate(bundle) 
+
+     # exclude line field if GET parameter set
+    if bundle.request.GET.get('condensed', 'false') == 'true': 
+      del bundle.data['line'] 
+      bundle.data['node_src_id'] = bundle.obj.node_src_id
+      bundle.data['node_sink_id'] = bundle.obj.node_sink_id
+
+    return bundle 
 
 class RouteResource(ModelResource):
   class Meta:
@@ -71,14 +70,16 @@ class RouteResource(ModelResource):
       from_building = Building.objects.get(id=from_id)
       to_building = Building.objects.get(id=to_id)
 
-      node_from_id = Node.objects.filter(building=from_building)[0].id
-      node_to_id = Node.objects.filter(building=to_building)[0].id
+      node_from_id = from_building.centroid_id
+      node_to_id = to_building.centroid_id
 
       lz = LazyGraph()
-      nd = lz.get_node_dict()
-      length, path = nx.bidirectional_dijkstra(lz.get_graph(), from_id, to_id, weight='weight')
+      length, path = nx.bidirectional_dijkstra(lz.get_graph(), node_from_id, node_to_id, weight='weight')
 
-      return [nd[x] for x in path]
+      return [Node.objects.get(id=x) for x in path]
 
     return []
 
+  def _build_reverse_url(self, name, args=None, kwargs=None):
+    kwargs['resource_name'] = 'node'
+    return super(RouteResource, self)._build_reverse_url(name, args=args, kwargs=kwargs)

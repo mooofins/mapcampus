@@ -1,21 +1,31 @@
 from django.db import models
 from django.contrib.gis.db import models as gismodels
 from django.contrib import admin
-
-class Building(models.Model):
-  name = models.CharField(max_length=100)
+from django.contrib.gis.geos import LineString
 
 class Node(gismodels.Model):
-  coordinates = gismodels.PointField(null=False)
-  building = gismodels.ForeignKey(Building, null=True, blank=True)
+  coordinates = gismodels.PointField()
+  objects = gismodels.GeoManager()
+
+class Building(gismodels.Model):
+  name = models.CharField(max_length=100)
+  centroid = gismodels.ForeignKey(Node, related_name='building_centroid')
   objects = gismodels.GeoManager()
 
 class Edge(gismodels.Model):
   node_src = gismodels.ForeignKey(Node, related_name='edge_node_src')
   node_sink = gismodels.ForeignKey(Node, related_name='edge_node_sink')
-  weight = models.FloatField(default=0.0); 
+  line = gismodels.LineStringField(); 
   objects = gismodels.GeoManager()
 
-  def undirected_save(self):
-    Edge.objects.get_or_create(node_src=self.node_sink, node_sink=self.node_src)
-    self.save()
+  def clean(self, *args, **kwargs):
+    if self.node_src.id > self.node_sink.id:
+      raise ValidationError('Node source id must be less than node sink id!')
+    super(Edge, self).clean(*args, **kwargs)
+
+  def full_clean(self, *args, **kwargs):
+    return self.clean(*args, **kwargs)
+
+  def save(self, *args, **kwargs):
+    self.full_clean()
+    super(Edge, self).save(*args, **kwargs)

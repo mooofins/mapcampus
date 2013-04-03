@@ -1,0 +1,55 @@
+html,
+body,
+#edit-container,
+#edit-container > .row-fluid {
+  height: 100%;
+}
+
+#map_canvas {
+  height: 100%;
+  width: 100%;
+}
+
+#center {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+#entry-container {
+  display: inline-block;
+  left: 85px;
+  position: absolute;
+  top: 10px;
+  pointer-events: none;   
+  z-index: 50;
+}
+
+#toolbar-panel {
+  pointer-events: all;   
+  margin-bottom: 5px;
+}
+
+#edit-panel {
+  display: inline-block;
+  pointer-events: all;   
+}
+
+#edit-panel .modal-header {
+  margin-top: 0;
+}
+
+#edit-panel .modal-footer {
+  padding-bottom: 0;
+}
+
+.icon-overlay {
+  position: relative; 
+  display: block; 
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  float: right;
+}
