@@ -9,7 +9,7 @@ frontend.
 ## Building MapCampus
 
 1. Install PostgreSQL
-    * Will need psycopg2 to work properly with Django.
+  * Will need psycopg2 to work properly with Django.
   * Read the PostgreSQL tutorials for your OS of choice to initialize your database.
 
 2. Install PostGIS
@@ -27,6 +27,13 @@ frontend.
     to initialize.
 
 6. Start up Django!
+
+## Testing
+
+1. Install Testacular
+
+2. Run `testacular mapcampus/static/config/testacular.conf.js` from the project directory.
+  * Use `testacular-e2e.conf.js` to run end-to-end tests.
 
 ## Authors
 
