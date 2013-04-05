@@ -5,7 +5,8 @@ describe('Edit Controllers', function() {
   var nodesPayload = {
     meta: {
       limit: 5000, next: null, offset: 0, previous: null, total_count: 3
-    }, objects: [{
+    }, objects: [
+      {
         coordinates : {coordinates: [1, 1], type: "Point"},
         id: 1, 
         resource_uri: "/api/v1/node/1/"
@@ -17,18 +18,32 @@ describe('Edit Controllers', function() {
         coordinates: {coordinates: [3, 3], type: "Point"},
         id: 3, 
         resource_uri: "/api/v1/route/3/"
-      }]
-  }
+      }
+    ]
+  };
 
   var edgesPayload = {
     meta: {
       limit: 5000, next: null, offset: 0, previous: null, total_count: 2
-    }, objects: [{
+    }, objects: [
+      {
         id: 1, node_sink_id: 2, node_src_id: 1, resource_uri: "/api/v1/edge/1/"
       }, {
         id: 2, node_sink_id: 3, node_src_id: 2, resource_uri: "/api/v1/edge/2/"
-      }]
-  }
+      }
+    ]
+  };
+
+  var buildingsPayload = {
+    meta: {
+      limit: 5000, next: null, offset: 0, previous: null, total_count: 1
+    }, 
+    objects: [
+      {
+        centroid_id: 1, id: 1, name: "Ah.c", resource_uri: "/api/v1/building/1/"
+      }
+    ]
+  };
 
   beforeEach(function() {
     this.addMatchers({
@@ -65,13 +80,14 @@ describe('Edit Controllers', function() {
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('/api/v1/node?format=json&limit=5000').respond(nodesPayload);
       $httpBackend.expectGET('/api/v1/edge?condensed=true&format=json&limit=5000').respond(edgesPayload);
+      $httpBackend.expectGET('/api/v1/building?format=json&limit=5000').respond(buildingsPayload);
 
       scope = $rootScope.$new();
       ctrl = $controller(EditCtrl, {
         $scope: scope, 
         GoogleMapService: jasmine.createSpyObj(
           'GoogleMapService',
-          ['mapSubscribe', 'subscribe', 'drawNode', 'drawEdge']
+          ['addListener', 'addGlobalListener', 'drawPolyline', 'drawMarker', 'drawCircle']
         )
       });
     }));
@@ -80,8 +96,8 @@ describe('Edit Controllers', function() {
       scope.load();
       $httpBackend.flush();
 
-      expect(scope.map.drawNode).toHaveBeenCalled();
-      expect(scope.map.drawEdge).toHaveBeenCalled();
+      expect(scope.map.drawCircle).toHaveBeenCalled();
+      expect(scope.map.drawPolyline).toHaveBeenCalled();
     });
 
     it('Moving a node should change its coordinates and redraw adjacent edges.', function() {
@@ -94,7 +110,7 @@ describe('Edit Controllers', function() {
       var e1 = ctrl.edges[1];
 
       spyOn(e1, "redraw");
-      n1.move([50, 50]);
+      ctrl.onNodeCenterChanged(n1, [50, 50]);
 
       expect(n1.coordinates).toEqualData([50, 50]);
       expect(e1.redraw).toHaveBeenCalled();
@@ -117,6 +133,7 @@ describe('Edit Controllers', function() {
 
       $httpBackend.expectGET('/api/v1/node?format=json&limit=5000').respond(nodesPayload);
       $httpBackend.expectGET('/api/v1/edge?condensed=true&format=json&limit=5000').respond(edgesPayload);
+       $httpBackend.expectGET('/api/v1/building?format=json&limit=5000').respond(buildingsPayload);
       scope.load(); $httpBackend.flush();
 
       expect(ctrl.nodes).toBeLength(5);
@@ -133,8 +150,8 @@ describe('Edit Controllers', function() {
       var n2 = ctrl.nodes[2];
       var n3 = ctrl.nodes[3];
 
-      n1.move([500, 500]);
-      ctrl.deleteNode(n3);
+      ctrl.onNodeCenterChanged(n1, [500, 500]);
+      scope.deleteNode(n3);
 
       ctrl.addEdge(-1, n1, n2);
       var e1 = ctrl.edges[-1];
@@ -150,7 +167,7 @@ describe('Edit Controllers', function() {
       ctrl.addNode(-1, [100, 100]);
       var nn1 = ctrl.nodes[-1];
 
-      ctrl.deleteNode(nn1);
+      scope.deleteNode(nn1);
 
       expect(ctrl.nodes).toBeLength(0);
     });

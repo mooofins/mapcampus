@@ -1,7 +1,5 @@
 html,
-body,
-#edit-container,
-#edit-container > .row-fluid {
+body {
   height: 100%;
 }
 
@@ -12,16 +10,14 @@ body,
 
 #center {
   height: 100%;
-  position: absolute;
   width: 100%;
 }
 
 #entry-container {
-  display: inline-block;
-  left: 85px;
+  margin-top: 10px;
+  margin-left: 85px;
   position: absolute;
-  top: 10px;
-  pointer-events: none;   
+  pointer-events: none;
   z-index: 50;
 }
 
@@ -31,16 +27,13 @@ body,
 }
 
 #edit-panel {
+  margin: 0;
   display: inline-block;
   pointer-events: all;   
 }
 
-#edit-panel .modal-header {
-  margin-top: 0;
-}
-
-#edit-panel .modal-footer {
-  padding-bottom: 0;
+#edit-panel form {
+  position: relative;
 }
 
 .icon-overlay {
@@ -51,5 +44,6 @@ body,
 }
 
 .btn-delete {
-  float: right;
+  position: absolute;
+  right: 0;
 }

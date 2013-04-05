@@ -36,7 +36,7 @@ describe('Home Controllers', function() {
         $scope: scope, 
         GoogleMapService: jasmine.createSpyObj(
           'GoogleMapService',
-          ['drawRoute']
+          ['addListener', 'addGlobalListener', 'drawPolyline', 'drawMarker', 'drawCircle', 'fitBoundsToPolyline']
         )
       });
     }));
@@ -52,10 +52,11 @@ describe('Home Controllers', function() {
       expect(n2.coordinates).toEqualData([40.10916663656381, -88.22810251097272]);
     });
 
-    it('Should call route draw method.', function() {
+    it('Should call appropriate draw methods.', function() {
       scope.search(1, 4); $httpBackend.flush();
 
-      expect(scope.map.drawRoute).toHaveBeenCalled();
+      expect(scope.map.drawMarker).toHaveBeenCalled();
+      expect(scope.map.drawPolyline).toHaveBeenCalled();
     });
   });
 });

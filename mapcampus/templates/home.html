@@ -20,18 +20,14 @@
 
   <body ng-controller="MapCtrl">
     {% include "partial/navbar.html" with home_item_class="active" %}
-
+    
     <div id="center">
-      <div id="entry-container"> 
-        <form id="entry" class="form-horizontal pull-left well">
-          <span class="input-prepend">
-            <span class="add-on">From</span>
-            <input id="from-input" type="text" class="span2" autocomplete="off" ng-model="from" building-ta>
-          </span>
-          <span class="input-prepend">
-            <span class="add-on">To</span>
-            <input id="to-input" type="text" class="span2" autocomplete="off" ng-model="to" building-ta>
-          </span>
+      <div id="entry-container" class="well"> 
+        <form class="form-inline">
+          <input id="from-input" placeholder="From" class="input-medium" type="text" autocomplete="off" ng-model="from" building-ta>
+
+          <input id="to-input" placeholder="To" class="input-medium" type="text" autocomplete="off" ng-model="to" building-ta>
+
           <button type="submit" class="btn btn-primary" ng-click="search(from, to)">Go &raquo;</button>
         </form>
       </div>

@@ -1,0 +1,12 @@
+#login-dropdown {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+#login-dropdown:after {
+  border-bottom: 6px solid #f5f5f5;
+}
+
+#login-dropdown form {
+  margin: 0;
+}

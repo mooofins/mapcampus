@@ -8,7 +8,6 @@ files = [
   'app/lib/jquery/*.js',
   'app/lib/bootstrap/**/*.js',
   'test/lib/angular/angular-mocks.js',
-  'test/unit/**/services.js',
   'test/unit/**/*.js',
   'app/js/**/models.js',
   'app/js/**/*.js',

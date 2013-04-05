@@ -1,9 +1,7 @@
-<div class="modal-header">
-  <button class="btn btn-danger btn-delete" ng-click="deleteNode(data.selected)">Delete</button>
-  <h3>Node</h3>
-</div>
+<form>
+  <button class="btn btn-danger btn-delete" ng-click="deleteNode(data.selected); unselect()">Delete</button>
+  <legend>Node</legend>
 
-<div class="modal-body">
   <div class="control-group">
     <label class="control-label" for="inputIcon">Tags</label>
     <div class="controls"> 
@@ -16,4 +14,4 @@
       </label>
     </div>
   </div>
-</div>
+</form>

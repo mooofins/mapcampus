@@ -9,13 +9,39 @@
         </a>
         <a class="brand" href="#">MapCampus</a>
         <div class="nav-collapse collapse">
-          <p class="navbar-text pull-right">
-            Logged in as <a href="#" class="navbar-link">Username</a>
-          </p>
+          <ul class="nav pull-right">
+            <li class="dropdown">
+              {% if user.is_authenticated %}
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-cogs"></i>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation">
+                  <a
+                  role="menuitem"
+                  tabindex="-1"
+                  href="/accounts/logout?redirect={{ request.get_full_path|urlencode }}">
+                    Logout
+                  </a>
+                </li>
+              </ul>
+              {% else %}
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Login<b class="caret"></b>
+              </a>
+              <div id="login-dropdown" class="dropdown-menu" role="menu">
+                {% include "partial/login.html" %}  
+              </div>
+              {% endif %}
+            </li>
+          </ul>
+
           <ul class="nav">
             <li class="{{ home_item_class }}"><a href="/">Home</a></li>
+            {% if user.is_authenticated %}
             <li class="{{ edit_item_class }}"><a href="/edit">Edit</a></li>
-            <li class="{{ analytics_item_class }}"><a href="/analytics">Analytics</a></li>
+            {% endif %}
+            <li class="{{ visualizaions_item_class }}"><a href="/visualizations">Visualizations</a></li>
             <li class="{{ contact_item_class }}"><a href="/contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->

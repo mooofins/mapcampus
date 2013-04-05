@@ -16,7 +16,7 @@ function MapCtrl($scope, Buildings, Routes, GoogleMapService) {
       });
 
       $scope.route = new Route($scope.map, nodes);
-      $scope.route.draw($scope);
+      $scope.route.draw();
     });
   }
 }

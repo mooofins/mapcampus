@@ -30,53 +30,18 @@ function EditCtrl($scope, $compile, $q, Nodes, Edges, Buildings, GoogleMapServic
   var me = this;
 
   // Bind map listener.
-  $scope.map.mapSubscribe($scope, ['click']);
-  $scope.$on('map_click', function(event, map, coordinates) {
+  $scope.map.addGlobalListener('click', function(event) {
+    var coordinates = [event.latLng.lat(), event.latLng.lng()];
     switch ($scope.state) {
       case $scope.STATE.ADD_NODE:
-        me.addNode(addedNodeSeq--, coordinates);
+        var id = addedNodeSeq; addedNodeSeq--;
+
+        me.addNode(id, coordinates);
+        select(me.nodes[id]);
+        $scope.state = $scope.STATE.EDIT;
         break;
     }
-  });
-
-  // Bind model listeners. Most of the $scope.STATE machine logic should go here.
-  $scope.$on('node_click', function(event, node) {
-    switch ($scope.state) {
-      case $scope.STATE.EDIT:
-        select(node);
-        break;
-      case $scope.STATE.ADD_EDGE_START:
-        edgeSrc = node;
-        $scope.state = $scope.STATE.ADD_EDGE_END;
-        break;
-      case $scope.STATE.ADD_EDGE_END:
-        me.addEdge(addedEdgeSeq--, edgeSrc, node);
-        $scope.state = $scope.STATE.ADD_EDGE_START;
-        break;
-      case $scope.STATE.ADD_BUILDING:
-        me.addBuilding(addedBuildingSeq--, "", node);
-        break;
-    }
-  });
-
-  $scope.$on('node_center_changed', function(event, node, coordinates) {
-    node.move(coordinates); 
-  });
-
-  $scope.$on('edge_click', function(event, edge) {
-    switch ($scope.state) {
-      case $scope.STATE.EDIT:
-        select(edge);
-        break;
-    }
-  });
-
-  $scope.$on('building_click', function(event, building) {
-    switch ($scope.state) {
-      case $scope.STATE.EDIT:
-        select(building);
-        break;
-    }
+    $scope.$apply();
   });
 
   $scope.save = function() {
@@ -143,66 +108,6 @@ function EditCtrl($scope, $compile, $q, Nodes, Edges, Buildings, GoogleMapServic
     });
   };
 
-  $scope.getEditorPath = function(model) {
-    if (!model) {
-      return "";
-    }
-    return '/static/app/html/' + model.type() + '_edit.html';
-  }
-
-  $scope.deleteNode = function(node) {
-    if (node.status === STATUS.ADDED) {
-      delete me.nodes[node.id];
-      
-      // All edges adjacent to a new node are new as well. 
-      angular.forEach(node.adjacent, function(edge) {
-        delete me.edges[edge.id];
-      });
-
-      if (node.building) {
-        delete me.buildings[node.building.id];
-      }
-    }
-
-    if (node.building) {
-      $scope.deleteBuilding(node.building);
-    }
-
-    erase(node);
-  }
-
-  $scope.deleteEdge = function(edge) {
-    if (edge.status === STATUS.ADDED) {
-      delete me.edges[edge.id];
-    }
-    erase(edge);
-  }
-
-  $scope.deleteBuilding = function(building) {
-    if (building.status === STATUS.ADDED) {
-      delete me.buildings[building.id];
-    }
-    erase(building);
-  }
-
-  this.addNode = function(id, coordinates) {
-    var node = new Node($scope.map, id, coordinates);
-    node.draw($scope, ['click', 'center_changed']);
-    me.nodes[id] = node;
-  }
-
-  this.addEdge = function(id, src, sink) {
-    var edge = new Edge($scope.map, id, src, sink);
-    edge.draw($scope, ['click']);
-    me.edges[id] = edge;
-  }
-
-  this.addBuilding = function(id, name, centroid) {
-    var building = new Building($scope.map, id, name, centroid);
-    building.draw($scope, ['click']);
-    me.buildings[id] = building;
-  }
-
   function createNodesPromise() {
     var deferred = $q.defer();
     Nodes.get({ limit: 5000 }, function(data) {
@@ -237,11 +142,137 @@ function EditCtrl($scope, $compile, $q, Nodes, Edges, Buildings, GoogleMapServic
     return deferred.promise;
   }
 
-  function erase(model) {
-    if ($scope.data.selected === model) {
-      $scope.data.selected = null;
+  $scope.getEditorPath = function(model) {
+    if (!model) {
+      return "";
     }
-    model.erase();
+    return '/static/app/html/' + model.type() + '_edit.html';
+  }
+
+  $scope.unselect = function() {
+    $scope.data.selected = null;
+  }
+
+  $scope.deleteNode = function(node) {
+    if (node.status === STATUS.ADDED) {
+      delete me.nodes[node.id];
+    }
+
+    angular.forEach(node.adjacent, function(edge) {
+      $scope.deleteEdge(edge);
+    });
+
+    if (node.building) {
+      $scope.deleteBuilding(node.building);
+    }
+
+    node.erase();
+  }
+
+  $scope.deleteEdge = function(edge) {
+    if (edge.status === STATUS.ADDED) {
+      delete me.edges[edge.id];
+    }
+    edge.erase();
+  }
+
+  $scope.deleteBuilding = function(building) {
+    if (building.status === STATUS.ADDED) {
+      delete me.buildings[building.id];
+    }
+    building.erase();
+  }
+
+  this.addNode = function(id, coordinates) {
+    var node = new Node($scope.map, id, coordinates);
+    node.draw();
+    $scope.map.addListener(node, 'click', function() {
+      onNodeClick(node); 
+    });
+    $scope.map.addListener(node, 'center_changed', function(event) {
+      var coordinates = [
+        node.view.getCenter().lat(),
+        node.view.getCenter().lng(),
+      ]
+      onNodeCenterChanged(node, coordinates); 
+    });
+    me.nodes[id] = node;
+  }
+
+  this.addEdge = function(id, src, sink) {
+    var edge = new Edge($scope.map, id, src, sink);
+    edge.draw();
+    $scope.map.addListener(edge, 'click', function() {
+      onEdgeClick(edge); 
+    });
+    me.edges[id] = edge;
+  }
+
+  this.addBuilding = function(id, name, centroid) {
+    var building = new Building($scope.map, id, name, centroid);
+    building.draw();
+    $scope.map.addListener(building, 'click', function() {
+      onBuildingClick(building); 
+    });
+    me.buildings[id] = building;
+  }
+
+  this.onNodeClick = function(node) {
+    switch ($scope.state) {
+      case $scope.STATE.EDIT:
+        select(node);
+        break;
+      case $scope.STATE.ADD_EDGE_START:
+        edgeSrc = node;
+        $scope.state = $scope.STATE.ADD_EDGE_END;
+        break;
+      case $scope.STATE.ADD_EDGE_END:
+        var id = addedEdgeSeq; addedEdgeSeq--;
+        me.addEdge(id, edgeSrc, node);
+        select(me.edges[id]);
+        $scope.state = $scope.STATE.EDIT;
+        break;
+      case $scope.STATE.ADD_BUILDING:
+        var id = addedBuildingSeq; addedBuildingSeq--;
+        me.addBuilding(id, "", node);
+        select(me.buildings[id]);
+        $scope.state = $scope.STATE.EDIT;
+        break;
+    }
+  }
+
+  this.onNodeCenterChanged = function(node, coordinates) {
+    if (node.status === STATUS.UNCHANGED) {
+      node.status = STATUS.CHANGED;
+    }
+    node.coordinates = coordinates;
+
+    node.redraw();
+    angular.forEach(node.adjacent, function(edge) {
+      if (edge.status === STATUS.UNCHANGED) {
+        edge.status = STATUS.CHANGED;
+      }
+      edge.redraw();
+    });
+    if (node.building) {
+      node.building.redraw();
+    }
+  }
+
+  this.onEdgeClick = function(edge) {
+    switch ($scope.state) {
+      case $scope.STATE.EDIT:
+        select(edge);
+        break;
+    }
+  }
+
+  this.onBuildingClick = function(building) {
+    switch ($scope.state) {
+      case $scope.STATE.EDIT:
+        select(building);
+        break;
+    }
   }
 
   function select(model) {

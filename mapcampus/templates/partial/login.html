@@ -1,0 +1,29 @@
+<form action="/accounts/login/" method="POST" class="form">
+  <fieldset>
+    <label for="username">Username</label>
+    <div>
+      <div class="input-prepend">
+        <span class="add-on">
+          <i class="icon-user"></i>
+        </span>
+        <input name="username" type="text" class="username input-medium">
+      </div>
+    </div>
+    
+    <label for="password">Password</label>
+    <div>
+      <div class="input-prepend">
+        <span class="add-on">
+          <i class="icon-lock"></i>
+        </span>
+        <input name="password" type="password" class="password input-medium">
+      </div>
+    </div>
+
+    <button class="btn btn-primary">Login</button>
+
+    <input type="hidden" name="redirect" value="{{ request.get_full_path|urlencode }}">
+
+    {% csrf_token %}
+  </fieldset>
+</form>

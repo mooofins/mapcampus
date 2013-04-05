@@ -1,5 +1,7 @@
 'use strict';
 
+var models = models || {};
+
 var STATUS = {
   UNCHANGED: 0,
   CHANGED: 1,
@@ -7,20 +9,56 @@ var STATUS = {
   DELETED: 3,
 };
 
+function computeColor(status, selected) {
+  if (selected) {
+    return "#2f96b4";
+  }
+  switch (status) {
+    case STATUS.UNCHANGED:
+      return "#ee5f5b";
+    case STATUS.CHANGED:
+      return "#fcb44d"; 
+    case STATUS.ADDED:
+      return "#62c462";
+  }
+}
+
 var Route = (function() {
   function Route(map, nodes) {
     this.map = map;
     this.nodes = nodes;
   }
 
-  Route.prototype.draw = function(scope, events) {
-    this.views = this.map.drawRoute(scope, this, events);
+  Route.prototype.draw = function() {
+    var arr = $.map(this.nodes, function(node, i) { 
+      return [node.coordinates];
+    });
+
+    var pathOpts = {
+      fillColor: computeColor(STATUS.UNCHANGED, false),
+      fillOpacity: 0.5,
+      strokeColor: computeColor(STATUS.UNCHANGED, false),
+      strokeWeight: 3,
+      zIndex: 2,
+    };
+
+    this.start = this.map.drawMarker(arr[0]);
+    this.path = this.map.drawPolyline(arr, pathOpts);
+    this.end = this.map.drawMarker(arr[arr.length - 1]);
+
+    this.map.fitBoundsToPolyline(this.path);
   }
 
   Route.prototype.erase = function() {
-    angular.forEach(this.views, function(view) {
-      view.setMap(null);
-    });
+    if (this.start) {
+      this.start.setMap(null);
+    }
+    if (this.path) {
+      this.path.setMap(null);
+    }
+    if (this.end) {
+      this.end.setMap(null);
+    }
   }
 
   return Route;
@@ -42,37 +80,40 @@ var Node = (function() {
     this.building = null;
   }
 
-  Node.prototype.draw = function(scope, events) {
-    this.view = this.map.drawNode(scope, this, events);
+  Node.prototype.draw = function() {
+    var opts = {
+      draggable: true,
+      fillColor: computeColor(this.status, this.selected),
+      fillOpacity: 0.5,
+      radius: 2,
+      strokeColor: computeColor(this.status, this.selected),
+      strokeWeight: 3,
+      zIndex: 5,
+    };
+    this.view = this.map.drawCircle(this.coordinates, opts);
   }
 
   Node.prototype.redraw = function() {
-    this.map.redrawNode(this);
+    if (this.view) {
+      this.view.setOptions({
+        fillColor: computeColor(this.status, this.selected),
+        strokeColor: computeColor(this.status, this.selected),
+      });
+    }
   }
 
   Node.prototype.erase = function() {
     this.status = STATUS.DELETED;
-    this.map.erase(this.view);
-    angular.forEach(this.adjacent, function(edge) {
-      edge.erase();
-    });
-    if (this.building) {
-      this.building.erase();
-    }
-  }
+    if (this.view) {
+      this.view.setMap(null);
 
-  Node.prototype.move = function(coordinates) {
-    if (this.status === STATUS.UNCHANGED) {
-      this.status = STATUS.CHANGED;
-    }
-
-    this.coordinates = coordinates;
-    this.redraw();
-    angular.forEach(this.adjacent, function(edge) {
-      edge.redraw();
-    });
-    if (this.building) {
-      this.building.redraw();
+      angular.forEach(this.adjacent, function(edge) {
+        edge.erase();
+      });
+      
+      if (this.building) {
+        this.building.erase();
+      }
     }
   }
 
@@ -98,17 +139,37 @@ var Edge = (function() {
     sink.adjacent.push(this);
   }
 
-  Edge.prototype.draw = function(scope, events) {
-    this.view = this.map.drawEdge(scope, this, events);
+  Edge.prototype.draw = function() {
+    var arr = [this.src.coordinates, this.sink.coordinates];
+    var opts = {
+      fillColor: computeColor(this.status, this.selected),
+      fillOpacity: 0.5,
+      strokeColor: computeColor(this.status, this.selected),
+      strokeWeight: 3,
+      zIndex: 2,
+    };
+    this.view = this.map.drawPolyline(arr, opts);
   }
 
   Edge.prototype.redraw = function() {
-    this.map.redrawEdge(this);
+    if (this.view) {
+      var path = [
+        this.map.convertToLatLng(this.src.coordinates),
+        this.map.convertToLatLng(this.sink.coordinates)
+      ];
+      this.view.setOptions({
+        path: path,
+        fillColor: computeColor(this.status, this.selected),
+        strokeColor: computeColor(this.status, this.selected),
+      });
+    }
   }
 
   Edge.prototype.erase = function() {
     this.status = STATUS.DELETED;
-    this.map.erase(this.view);
+    if (this.view) {
+      this.view.setMap(null);
+    }
   }
 
   Edge.prototype.type = function() {
@@ -132,17 +193,23 @@ var Building = (function() {
     centroid.building = this;
   }
 
-  Building.prototype.draw = function(scope, events) {
-    this.view = this.map.drawBuilding(scope, this, events);
+  Building.prototype.draw = function() {
+    this.view = this.map.drawMarker(this.centroid.coordinates);
   }
 
   Building.prototype.redraw = function() {
-    this.map.redrawBuilding(this);
+    if (this.view) {
+      this.view.setOptions({
+        position: this.map.convertToLatLng(this.centroid.coordinates)
+      });
+    }
   }
 
   Building.prototype.erase = function() {
     this.status = STATUS.DELETED;
-    this.map.erase(this.view);
+    if (this.view) {
+      this.view.setMap(null);
+    }
   }
 
   Building.prototype.type = function() {
